@@ -1,0 +1,239 @@
+* {margin;0; padding:0;}
+h1, h2, h3, h4, h5, h6 {color:#0b5492; font-weight:700; font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+body {background-color:#ecf0f5; background-image:url('../images/dashboard_bg2.png'); background-repeat:no-repeat;}
+.main-color {color: #0b5492}
+.main-bg {background-color:#0b5492;}
+.row {margin:0;}
+.MarginTop20 {margin-top:20px !important;}
+.nopaddingleft {padding-left:0px;}
+.nopaddingright {padding-right:0px;}
+.color-panel {background-color:#0b5492; color:#fff; border-radius:4px; border-bottom-left-radius:0px; border-bottom-left-radius:0px;}
+.panel-heading { padding: 0;	border:0;}
+.panel-title { background-color:#0b5492; color:#fff; padding:5px; border-radius:4px; border-bottom-left-radius:0; border-bottom-right-radius:0;}
+.panel-title>a, .panel-title>a:active{	display:block;	padding:5px;  color:#fff;  font-size:16px;  font-weight:bold;  word-spacing:3px;	text-decoration:none;}
+.panel-heading  a:before {   font-family: 'FontAwesome';   content: "\f13a";   float: right;   transition: all 0.5s;}
+.panel-heading.active a:before {	-webkit-transform: rotate(180deg);	-moz-transform: rotate(180deg);	transform: rotate(180deg);}
+.panel-body {border-top:none; margin-top:-1px;}
+.panel-title {padding:10px;}
+.panel {border:1px solid #ddd !important;}
+sup {color:red;}
+.height32 {height:32px !important;}
+label {font-weight:500; color:#0b5492}
+input, textarea {height:32px !important;}
+.table tbody tr td:first-child {border-top:none;}
+.custom-btn {background-color:#0b5492; color:#fff; padding:4px 10px; border:none; border-radius:4px;}
+.custom-btn.pull-right {margin-right:10px;}
+.table thead tr th {background-color:#0b5492; color:#fff;}
+button[disabled] {background-color:rgba(11, 84, 146, 0.5);}
+/*  Edit Claim */
+
+.addclaimform input, .addclaimform textarea{margin-top:10px;}
+.Editclaim {padding:5px; border-radius:4px; background-color:#fff; margin:95px 10px 10px 270px;}
+.editclaim-heading {border-bottom:1px solid #c9c9c9; overflow:hidden;}
+.editclaim-heading h4 {margin:15px 5px; float:left;}
+.editclaim-heading h5 {margin:5px; float:left; font-size:16px; color:#fff;}
+.right-btns {overflow:hidden; float:right;}
+.right-btns a {text-align:center; position:relative; margin-top:10px; display: inline-block; z-index:1029;  height: 40px;  width: 40px;  margin-right: 5px;  padding: 8px 10px;  transition: all .218s ease;  color: #0b5492;  -webkit-transition: all .218s ease;  -o-transition: all .218s ease;  -moz-transition: all .218s ease;}
+.right-btns a i {font-size:18px;}
+.right-btns a:before {display: block;  content: "";  position: absolute; z-index:-1;  left: 0;  bottom: -1px;  right: 0;  height: 4px; overflow: hidden;background-color: #0b5492;  transition: all .218s ease;}
+.right-btns a:hover:before { height:50px; bottom:0;}
+.right-btns a:hover i { color:#fff;}
+
+.editclaim-content {padding:40px 0 0px;}
+.editclaim-content .form-group {margin:0;}
+/* .editclaim-content .form-control {height:30px;} */
+.inputhover {  display: inline-block;  padding: 10px 0 10px 15px;  font-weight: 400;  color: #0b5492;  border-radius: 0px; box-shadow:none;  outline: 0;  text-indent: 60px;  transition: all .3s ease-in-out;}
+.inputhover:hover {box-shadow:none;}
+.inputhover + label {display: inline-block;  position: absolute;    top: 2px;  left: 16px;  bottom: 8px;  padding: 4px;  color: #0b5492;  font-size: 15px; text-align:left;  transition: all .3s ease-in-out;  border-radius: 3px;}
+.inputhover + label:after {  position: absolute;  content: "";  width: 0;  height: 0;  top: 100%;  left: 50%;  margin-left: -3px;  border-left: 6px solid transparent;  border-right: 6px solid transparent;  border-top: 6px solid rgba(122, 184, 147, 0);  transition: all .3s ease-in-out;}
+.inputhover:focus::-webkit-input-placeholder, .inputhover:active::-webkit-input-placeholder {  color: #aaa;  text-indent: 0px;}
+.inputhover:focus, .inputhover:active {  text-indent: 0;}
+.inputhover:focus label sup, .inputhover:active label sup {display:none;}
+.inputhover::-webkit-input-placeholder {text-indent: 0;}
+.inputhover::-webkit-input-placeholder {  color: #fff;}
+.inputhover:focus + label, .inputhover:active + label {  color: #fff;  background: #0b5492;  transform: translateY(-29px); padding: 0px 40px;  text-indent: 0px;}
+.inputhover:focus + label sup, .inputhover:active + label sup {  display:none;}
+.inputhover:focus + label:after, .inputhover:active + label:after {  border-top: 8px solid #0b5492;}
+
+.ItemTable {margin-top:10px;}
+.ItemTable table thead th {background-color:#0b5492 !important; font-size:14px; border:1px solid #b6b8c0 !important;}
+.ItemTable table tbody td {border:1px solid #ddd !important; vertical-align:middle; padding:5px;}
+.magnify a {position: relative; }
+.magnify>a>img {width:30px; text-align:center;}
+.magnify a span {visibility:hidden;display:block;position: absolute;left: 60px;top: -80px;padding: 5px;}
+.magnify a span img {width:140px; border:1px solid #c9c9c9;}
+.magnify a:hover span, .magnify a:active span, .magnify a:focus span {visibility:visible;}
+.magnify a:hover, .magnify a:focus {visibility:visible;}
+.editpopover {color: #fff;  background-color: #0b5492;  padding: 6px;border-radius: 50%; margin-right:2px; float:left;}
+.deletepopover {color: #fff;  background-color: #ec4758;  padding: 6px 8px;  border-radius: 50%; float:left;}
+
+input.check {position: absolute;opacity: 0;}
+input.check:checked + label svg path {  stroke-dashoffset: 0;}
+input.check:focus + label {  transform: scale(1.03);}
+.check + label {  display: block;  border: 2px solid #333;  width:22px; height:22px;  border-radius: 0px;  cursor: pointer;  transition: all .2s ease; padding:2px; float:left;}
+.check + label:active {  transform: scale(1.05);  border-radius: 0px;}
+.check + label svg {  pointer-events: none;}
+.check + label svg path {  fill: none;  stroke: #333;  stroke-width: 10px;  stroke-linecap: round;  stroke-linejoin: round;  stroke-dasharray: 100;  stroke-dashoffset: 101;  transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);}
+.form span {font-weight:500; margin-left:10px; padding-top:10px;}
+/* .form {float:left; margin-right:35px;} */
+.form {margin-top:20px !important;}
+
+.claims-details table {margin-top:10px;}
+.claims-details table tr td {border:none;}
+.claims-details table tr td input, .claims-details table tr td textarea { box-shadow:none; border-radius:0; resize:none;}
+.claims-details table tr td input:focus, .claims-details table tr td textarea:focus {box-shadow:none; border-color:#0b5492;}
+#BillingAddress {margin-top:20px;}
+#BillingAddress .sel {margin-top:10px;}
+.effect-1 {position:relative;}
+.effect-1 .focus-border {  position: absolute;  bottom: 0;  left: 0;  width: 0;  height: 2px;  background-color: #0b5492;  transition: 0.4s;}
+.effect-1 input:focus ~ .focus-border {  width: 100%;  transition: 0.4s;}
+.effect-1 textarea:focus ~ .focus-border {  width: 100%;transition: 0.4s;}
+.sel {  font-size: 7px;  display: inline-block; width:100%;  background-color: transparent;  position: relative;  cursor: pointer; height:32px; margin-top:10px;}
+.sel::before {  position: absolute;  content: '\f063';  font-family: 'FontAwesome';  font-size: 2em;  color: #0b5492;  right: 20px;  top: calc(50% - 0.5em);}
+.sel.active::before {  transform: rotateX(-180deg);}
+.sel__placeholder {  display: block;  font-size: 14px;  color: #333;  padding: 0.2em 0.5em;  text-align: left;  pointer-events: none;  user-select: none;  visibility: visible;}
+.sel.active .sel__placeholder {  visibility: hidden;}
+.sel__placeholder::before {  position: absolute;  top: 0;  bottom: 0;  left: 0;  right: 0;  padding: 0.2em 0.5em;  content: attr(data-placeholder);  visibility: hidden;}
+.sel.active .sel__placeholder::before {  visibility: visible;}
+.sel__box {  position: absolute;  top: calc(100% + 4px);  left: 0px;  display: none;  list-style-type: none;  text-align: left;  font-size: 1em;  background-color: #FFF;  width: 100%;  box-sizing: border-box; box-shadow:0 0 10px 1px #ccc;}
+.sel.active .sel__box {  display: block;  animation: fadeInUp 500ms;}
+.sel__box__options {  display: list-item;  font-size: 14px;  color: #333;  padding: 5px;  user-select: none;}
+.sel__box__options::after {  content: '\f00c';  font-family: 'FontAwesome';  font-size: 14px;  margin-left: 5px;  display: none;}
+.sel__box__options.selected::after {  display: inline;}
+.sel__box__options:hover {  background-color: #ebedef;}
+.sel {  border: 1px solid #c9c9c9;}
+.sel--black-panther {  z-index: 3;}
+.sel.active {border: 1px solid #0b5492 !important;}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#Ext input{position:relative;}
+#Ext i {position:absolute; right:16px; z-index:9; top:37px; background-color:#0b5492; color:#fff; padding:9px 10px; border-top-right-radius:4px; border-bottom-right-radius:4px;}
+.form-horizontal .form-group {margin:0px;}
+.disabled {pointer-events: none;}
+.MarginTop20.form {float:left; margin-right:20px;}
+.fedEx{margin-top:15px !important; overflow:hidden;}
+.fedEx img {margin-top:10px;}
+
+.Expandup, .Expanddown
+{ display: inline-block; background: url('../images/arrows.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left;margin-top:18px; }
+
+.Expanddown { background-position: -5px -0px; width: 30px; height: 25px; }
+.Expandup { background-position: -5px -30px; width: 30px; height: 25px; }
+.expand {overflow:hidden; position:relative;}
+.expand:hover {cursor:pointer;}
+.Expandup:before {content:"Expand"; position:absolute; right:50px; top:20px;}
+.radio-btn {float:left; position:relative; margin-right:90px;}
+.radio-btn input[type=radio]{  position: absolute;  visibility: hidden;}
+.radio-btn label{  display: block;  position: relative;  font-weight: 300;  font-size: 15px;  padding: 10px 20px 20px 40px;  margin: 10px auto;  height: 30px;  z-index: 9;  cursor: pointer;  -webkit-transition: all 0.25s linear;}
+.radio-btn .check{  display: block;  position: absolute;  border: 2px solid #333;  border-radius: 100%;  height: 20px;  width: 20px;  top: 21px;  left: 10px;	z-index: 5;	transition: border .25s linear;	-webkit-transition: border .25s linear;}
+.radio-btn:hover .check {  border: 4px solid #333;}
+.radio-btn .check::before {  display: block;  position: absolute;	content: '';  border-radius: 100%;  height: 10px;  width: 10px;  top: 2px;	left: 2px;  margin: auto;	transition: background 0.25s linear;	-webkit-transition: background 0.25s linear;}
+.radio-btn input[type=radio]:checked ~ .check {  border: 3px solid #333;}
+.radio-btn input[type=radio]:checked ~ .check::before{  background: #333;}
+.radio-btn input[type=radio]:checked ~ label{  color: #333;}
+
+.radio-btn .check2{  display: block;  position: absolute;  border: 2px solid #333;  border-radius: 100%;  height: 20px;  width: 20px;  top: 21px;  left: 10px;	z-index: 5;	transition: border .25s linear;	-webkit-transition: border .25s linear;}
+.radio-btn:hover .check2 {  border: 4px solid #333;}
+.radio-btn .check2::before {  display: block;  position: absolute;	content: '';  border-radius: 100%;  height: 10px;  width: 10px;  top: 2px;	left: 2px;  margin: auto;	transition: background 0.25s linear;	-webkit-transition: background 0.25s linear;}
+.radio-btn input[type=radio]:checked ~ .check2 {  border: 3px solid #333;}
+.radio-btn input[type=radio]:checked ~ .check2::before{  background: #333;}
+
+.accountability {margin-top:20px; overflow:hidden;}
+.accountability table thead th {background-color:#d8d8d8 !important; font-size:14px; border:1px solid #b6b8c0 !important;}
+.accountability table tbody td {border:1px solid #ddd !important; vertical-align:middle; padding:5px;}
+
+.es-input {background-color:#fff;position:relative; margin-top:0px; width:100%; border:1px solid #c9c9c9;}
+.es-input:focus {outline:0; border-color:#0b5492;}
+.es-list {top:58px !important;}
+
+.clear select{margin-top:5px;}
+.clear i {position:absolute; right:20px; top:44px; color:#0b5492; font-size:16px;}
+.addclaimform .form-group {margin-bottom:10px;}
+.addclaimform input, .addclaimform textarea{ background-color:#fff !important; box-shadow:none; border-radius:0; padding:5px;}
+.addclaimform input:focus,  .addclaimform textarea:focus {outline:0; box-shadow:none; border-color:#0b5492;}
+p.help-text {font-size:13px; color:#0b5492; font-weight:600; margin-top:5px;}
+
+.button {  display: inline-block;  -webkit-font-smoothing: antialiased;  position: relative;  padding: 7px 0px;  padding-right: 45px;  background: #0b5492;  border: none;  color: white;  transition: .2s;}
+.button:before, .button:after {  position: absolute;  top: 0;  bottom: 0;  right: 0;  padding-top: inherit;  padding-bottom: inherit;  width: 2.8em;  content: "\00a0";  font-family: 'FontAwesome', sans-serif;  font-size: 1.2em;  text-align: center;  transition: .2s;  transform-origin: 50% 60%;}
+.button:before {  background: rgba(0, 0, 0, 0.1);}
+.button:hover {  background: #0b5492;}
+.button:active, .button:focus {  background: #0b5492;  outline: none;}
+.button {  min-width: 110px; margin-top:0px; margin-right:10px;}
+.save:after {  content: "\f019";}
+.save:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+.cancel:after {  content: "\f00d";}
+.cancel:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+.reset:after {  content: "\f01e";}
+.reset:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+.radio-btn:last-child {width:230px;}
+#creditcards label {padding-left:10px;}
+
+/* Chart CSS */
+
+.highcharts-contextbutton {display:none;}
+.highcharts-credits {display:none;}
+.highcharts-axis-title {fill:#0b5492 !important; font-weight:500; font-size:14px}
+.highcharts-xaxis-labels text{fill:#0b5492 !important; font-size:13px !important; font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;}
+.highcharts-column-series rect{fill:#0b5492 !important;}
+.highcharts-text-outline {display:none;}
+.highcharts-title {fill:#0b5492 !important; font-weight:600;}
+
+/* End Chart CSS */
+
+#communication h6 {font-size:15px; padding-bottom:10px;}
+#communication input, #communication textarea { border-radius:0; margin-top:15px; box-shadow:none; padding-left:5px;}
+#communication input:focus, #communication textarea:focus {box-shadow:none; border-color:#0b5492}
+
+
+#BillingAddress input, #BillingAddress textarea {margin-bottom:10px; margin-top:10px;}
+.return-details .disabled {margin-top:18px;}
+#claimsstatus {height:300px; width:350px; float:left;}
+#claimspie {height:300px; width:380px; float:left;}
+.Accountability #DataTables_Table_1_wrapper .row:first-child, .Accountability #DataTables_Table_1_wrapper .row:last-child {display:none;}
+.accountability .panel-body{padding:0;}
+.Accountability {margin-top:0px; float:left; width:100%;}
+.accountabilitytable .panel-title i:hover {cursor:pointer;}
+.accountabilitytable input, .accountabilitytable textarea { border-radius:0; margin-top:10px; box-shadow:none; padding-left:5px;}
+.accountabilitytable input:focus, .accountabilitytable textarea:focus {box-shadow:none; border-color:#0b5492}
+.accountabilitytable .sel {margin-top:10px;}
+
+.returndetails form input {margin-top:10px; margin-bottom:10px;}
+.returndetails form .sel {margin-top:10px;}
+
+.accountabilitytable .button {margin-top:0px; margin-bottom:10px; min-width:100px;}
+.accountabilitytable .button:before {width:40px;}
+
+.claim-images {overflow:hidden;}
+.claimimg {width:100px; min-height:100px; padding:10px; border:1px solid #c9c9c9; border-radius:4px; float:left; margin-right:15px; margin-bottom:20px;}
+.border-none table tr td {border:none;}
+
+.claimimages a {position: relative; float:left; margin-right:10px;}
+.claimimages>a>img {width:30px; text-align:center;}
+.claimimages a span {visibility:hidden;display:block;position: absolute;left: -40px;top: -105px;padding: 5px;}
+.claimimages a span img {width:100px; border:1px solid #c9c9c9;}
+.claimimages a:hover span, .magnify a:active span, .magnify a:focus span {visibility:visible;}
+.claimimages a:hover, .magnify a:focus {visibility:visible;}
+
+.overflowvisible {overflow:visible;}

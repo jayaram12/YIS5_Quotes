@@ -1,0 +1,85 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Item Personalization - YIS 6.0</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+<link href="css/jquery-editable-select.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.wizard.css" />
+<link href="css/personalization.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="ItemPersonalization">
+  		<div data-wizard-init>
+  		  <ul class="steps">
+    			<li data-step="1">Select Item</li>
+    			<li data-step="2">Verify PSD Files</li>
+    			<li data-step="3">Enter Item Details</li>
+    			<li data-step="4">Preview Template</li>
+    			<li data-step="5">Save&nbsp;&&nbsp;Finalize</li>
+  		  </ul>
+  		  <div class="steps-content">
+  			<div data-step="1">
+  			  <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12">
+              <form class="horizontal-form">
+                <div class="form-group">
+                    <label class="control-label main-color">Select Item# :&nbsp;<sup>*</sup></label>
+                    <select class="editable-select">
+                      <option selected>57050</option>
+                      <option selected>57070</option>
+                      <option selected>57073</option>
+                      <option selected>57080</option>
+                      <option selected>57090</option>
+                      <option selected>57097</option>
+                      <option selected>57120</option>
+                      <option selected>57127</option>
+                      <option selected>57128</option>
+                      <option selected>57130</option>
+                    </select>
+                </div>
+              </form>
+          </div>
+  			</div>
+  			<div data-step="2">
+  			  <h4>Address</h4>
+  			  <p>
+  			  Sed eleifend lobortis dolor, vel hendrerit neque interdum eget. Proin ac hendrerit diam. Mauris tristique libero vel condimentum sodales. Ut sed augue euismod, tincidunt nunc at, rutrum risus. Cras consequat purus sit amet augue varius; vitae ornare erat commodo. In hac habitasse platea dictumst. Nunc lobortis auctor ligula dictum scelerisque. Integer sed justo rutrum, rutrum tortor nec, feugiat nulla?
+  			  </p>
+  			</div>
+  			<div data-step="3">
+  			  <h4>Template</h4>
+  			  <p>
+  				Donec pharetra vel felis facilisis aliquam! Nunc consequat, lorem a scelerisque porttitor, orci neque mattis velit; at rhoncus quam felis a lorem. Cras dictum augue elit, non tempus leo pharetra nec! Nunc iaculis ex quis ante elementum varius. Curabitur a ultrices risus. Etiam elementum magna a eros maximus ornare. Aenean lectus dui, venenatis non tincidunt sed, dignissim at turpis? Vestibulum varius tempor turpis eget laoreet. Phasellus hendrerit purus vel arcu dapibus ullamcorper? Aliquam et nunc sagittis, semper orci eu, eleifend turpis! Integer eget aliquet libero. Vestibulum rutrum, ipsum nec bibendum sagittis, leo libero tristique erat, ut euismod lorem tortor quis lorem. Vivamus et tellus eu purus tempor posuere.
+  			  </p>
+  			</div>
+  			<div data-step="4">
+  			  <h4>Delivery</h4>
+  			  <p>
+  				Nullam sit amet sollicitudin leo. Donec lobortis est a sagittis ornare. Mauris mattis dui sit amet tortor dapibus, sit amet scelerisque nisl fermentum. Praesent efficitur ac mauris sit amet placerat. Pellentesque ultricies, nibh eu elementum convallis, sapien dolor egestas nunc, vitae volutpat lorem orci sed libero. Nullam posuere, massa a tempor maximus, tortor enim ultricies urna, pretium viverra nisi urna id erat? Etiam nec dolor condimentum, consequat velit sagittis, luctus metus. Proin molestie neque justo, ut elementum arcu congue faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla orci est, elementum et venenatis congue, pharetra in lorem. Fusce a blandit arcu.
+  			  </p>
+  			</div>
+  			<div data-step="5">
+  			  <h4>Payment</h4>
+  			  <p>
+  				Ut sed dignissim orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam scelerisque dapibus magna id scelerisque. Donec enim ligula, commodo ut sapien vitae, tincidunt tincidunt orci. Etiam faucibus sit amet ante ut ultrices. Etiam lacinia purus et sem fermentum commodo. Morbi a nulla ac purus cursus viverra. Fusce mauris sem, blandit quis arcu nec, posuere porta purus? Curabitur sit amet mauris tortor. Etiam pulvinar lacinia quam, vel interdum orci vulputate non. Praesent pharetra justo in lacus lacinia convallis. Morbi viverra blandit ultrices.
+  			  </p>
+  			</div>
+  		  </div>
+  		</div>
+      </div>
+
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery-editable-select.min.js"></script>
+<script type="text/javascript" src="js/jquery.wizard.js"></script>
+<script>
+  $('.editable-select').editableSelect({ effects: 'slide' });
+</script>
+</body>
+</html>

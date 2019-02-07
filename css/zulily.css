@@ -1,0 +1,129 @@
+* {margin;0; padding:0;}
+h1, h2, h3, h4, h5, h6 {color:#0b5492; font-weight:700; font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+body {background-color:#ecf0f5; background-image:url('../images/dashboard_bg2.png'); background-repeat:no-repeat;}
+.main-color {color: #0b5492}
+.main-bg {background-color:#0b5492;}
+.row {margin:0;}
+.MarginTop20 {margin-top:20px !important;}
+.nopaddingleft {padding-left:0px;}
+.nopaddingright {padding-right:0px;}
+label {font-weight:500; color:#0b5492; font-size:15px;}
+h5 {font-size:16px;}
+.form-group {margin-left:15px !important; margin-right:15px !important;}
+.overflowvisible {overflow:visible;}
+.panel-heading {background-color:#0b5492 !important;}
+.panel-title {color:#fff;}
+
+button[disabled] {background-color:rgba(11, 84, 146, 0.5);}
+
+/* COntent CSS */
+.zulily-content {padding:30px 10px 30px; border-radius:4px; background-color:#fff; margin:95px 10px 10px 270px;}
+.custom-search-input input{border:1px solid #0b5492; border-radius:5; height:40px;}
+.custom-search-input input::placeholder {color:#0b5492 !important;}
+.custom-search-input input:focus {box-shadow:none; border:1px solid #0b5492}
+.availability form table tr td {border:none; vertical-align:middle;}
+.availability form table {margin-bottom:5px;}
+.availability form table tbody td label{padding-top:0 !important;}
+.availability form table tbody td span {color:#0b5492;}
+.sel {  font-size: 7px;  display: inline-block; width:100%;  background-color: transparent;  position: relative;  cursor: pointer; height:32px; margin-top:10px; float:left;}
+.sel::before {  position: absolute;  content: '\f063';  font-family: 'FontAwesome';  font-size: 2em;  color: #0b5492;  right: 20px;  top: calc(50% - 0.5em);}
+.sel.active::before {  transform: rotateX(-180deg);}
+.sel__placeholder {  display: block;  font-size: 14px;  color: #333;  padding: 0.2em 0.5em;  text-align: left;  pointer-events: none;  user-select: none;  visibility: visible;}
+.sel.active .sel__placeholder {  visibility: hidden;}
+.sel__placeholder::before {  position: absolute;  top: 0;  bottom: 0;  left: 0;  right: 0;  padding: 0.2em 0.5em;  content: attr(data-placeholder);  visibility: hidden;}
+.sel.active .sel__placeholder::before {  visibility: visible;}
+.sel__box {  position: absolute;  top: calc(100% + 4px);  left: 0px;  display: none;  list-style-type: none;  text-align: left;  font-size: 1em;  background-color: #FFF;  width: 100%;  box-sizing: border-box; box-shadow:0 0 10px 1px #ccc;}
+.sel.active .sel__box {  display: block;  animation: fadeInUp 500ms;}
+.sel__box__options {  display: list-item;  font-size: 14px;  color: #333;  padding: 5px;  user-select: none;}
+.sel__box__options::after {  content: '\f00c';  font-family: 'FontAwesome';  font-size: 14px;  margin-left: 5px;  display: none;}
+.sel__box__options.selected::after {  display: inline;}
+.sel__box__options:hover {  background-color: #ebedef;}
+.sel {  border: 1px solid #c9c9c9;}
+.sel--black-panther {  z-index: 3;}
+
+/* ===== Keyframes ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.button {  display: inline-block;  -webkit-font-smoothing: antialiased;  position: relative;  padding: 7px 0px;  padding-right: 45px;  background: #0b5492;  border: none;  color: white;  transition: .2s;}
+.button:before, .button:after {  position: absolute;  top: 0;  bottom: 0;  right: 0;  padding-top: inherit;  padding-bottom: inherit;  width: 2.8em;  content: "\00a0";  font-family: 'FontAwesome', sans-serif;  font-size: 1.2em;  text-align: center;  transition: .2s;  transform-origin: 50% 60%;}
+.button:before {  background: rgba(0, 0, 0, 0.1);}
+.button:hover {  background: #0b5492;}
+.button:active, .button:focus {  background: #0b5492;  outline: none;}
+.button {  min-width: 110px; margin-top:0px; margin-right:10px;}
+.filter:after {  content: "\f0b0";}
+.filter:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+.cancel:after {  content: "\f00d";}
+.cancel:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+input.check {position: absolute;opacity: 0;}
+input.check:checked + label svg path {  stroke-dashoffset: 0;}
+input.check:focus + label {  transform: scale(1.03);}
+.check + label {  display: block;  border: 2px solid #333;  width:22px; height:22px;  border-radius: 0px;  cursor: pointer;  transition: all .2s ease; padding:2px; float:left;}
+.check + label:active {  transform: scale(1.05);  border-radius: 0px;}
+.check + label svg {  pointer-events: none;}
+.check + label svg path {  fill: none;  stroke: #333;  stroke-width: 10px;  stroke-linecap: round;  stroke-linejoin: round;  stroke-dasharray: 100;  stroke-dashoffset: 101;  transition: all 350ms cubic-bezier(1, 0, 0.37, 0.91);}
+.form span {font-weight:500; margin-left:10px; padding-top:10px;}
+/* .form {float:left; margin-right:35px;} */
+
+.magnify a {position: relative; }
+.magnify>a>img {width:30px; text-align:center;}
+.magnify a span {visibility:hidden;display:block;position: absolute;left: 45px;top: -80px;padding: 5px;}
+.magnify a span img {width:140px; border:1px solid #c9c9c9;}
+.magnify a:hover span, .magnify a:active span, .magnify a:focus span {visibility:visible;}
+.magnify a:hover, .magnify a:focus {visibility:visible;}
+
+.filter-result table tbody tr td:first-child .form-group {margin-left:5px !important; margin-right:5px !important;margin-top:5px !important;}
+.filter-result table thead tr th label {margin-bottom:0px !important;}
+.filter-result table tbody tr td {vertical-align:middle; padding:5px; border-top:none;}
+.filter-result table tbody tr td .control-label {margin:0px 20px 0px 15px;}
+.filter-result table thead tr th {background-color: #d8d8d8 !important;font-size: 14px; border: 1px solid #b6b8c0 !important; border-left:none !important;}
+.filter-result table thead tr th:first-child {border-left: 1px solid #b6b8c0 !important;}
+
+.addtoneworder:after {  content: "\f07a";}
+.addtoneworder:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+.addtoneworder.button {padding:7px 15px; padding-right:55px; margin-bottom:20px;}
+.addtoexistingorder.button {padding:7px 15px; padding-right:55px; margin-bottom:20px;}
+
+.addtoexistingorder:after {  content: "\f03a";}
+.addtoexistingorder:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+
+.save:after {  content: "\f019";}
+.save:hover:after {  -webkit-animation: none;  -webkit-transform: scale(1.4);  animation: none;  transform: scale(1.4);}
+
+#OrderNumbers .modal-title {background-color:#0b5492; color:#fff; padding:7px 10px;}
+#OrderNumbers .modal-header {padding:0; border-bottom:1px solid #0b5492;}
+#OrderNumbers .modal-header .close { margin-top:6px; margin-right:15px; color:#fff;box-shadow:none; opacity:0.8;}
+.modal-backdrop.in {opacity:0.7;}
+#OrderNumbers .modal-body p{font-size:14px; color:#0b5492; font-weight:600;}
+
+.radio-btn {float:left; position:relative; margin-right:120px; margin-left:150px;}
+.radio-btn input[type=radio]{  position: absolute;  visibility: hidden;}
+.radio-btn label{  display: block;  position: relative; color:#333; font-weight: 300;  font-size: 15px;  padding: 10px 20px 20px 40px;  margin: 10px auto;  height: 30px;  z-index: 9;  cursor: pointer;  -webkit-transition: all 0.25s linear;}
+.radio-btn .check{  display: block;  position: absolute;  border: 2px solid #333;  border-radius: 100%;  height: 20px;  width: 20px;  top: 21px;  left: 10px;	z-index: 5;	transition: border .25s linear;	-webkit-transition: border .25s linear;}
+.radio-btn:hover .check {  border: 4px solid #333;}
+.radio-btn .check::before {  display: block;  position: absolute;	content: '';  border-radius: 100%;  height: 10px;  width: 10px;  top: 2px;	left: 2px;  margin: auto;	transition: background 0.25s linear;	-webkit-transition: background 0.25s linear;}
+.radio-btn input[type=radio]:checked ~ .check {  border: 3px solid #333;}
+.radio-btn input[type=radio]:checked ~ .check::before{  background: #333;}
+.radio-btn input[type=radio]:checked ~ label{  color: #333;}
+
+.min-height{min-height:200px; overflow-y:auto;}
+.piecesCheck .form{float:left; margin-bottom:0; margin-top:5px;}

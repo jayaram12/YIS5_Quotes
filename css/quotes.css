@@ -1,0 +1,136 @@
+* {margin;0; padding:0;}
+h1, h2, h3, h4, h5, h6 {color:#0b5492; font-weight:700; font-family:'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+body {background-color:#ecf0f5; background-image:url('../images/quotes_bg.png'); background-repeat:no-repeat;}
+.main-color {color: #0b5492}
+.main-bg {background-color:#0b5492;}
+.row {margin:0;}
+.MarginTop20 {margin-top:20px !important;}
+.MarginBottom10 {margin-bottom:10px;}
+.MarginBottom20 {margin-bottom:20px;}
+.MarginTop10 {margin-top:10px !important;}
+.nopaddingleft {padding-left:0px;}
+.nopaddingright {padding-right:0px;}
+label {font-weight:500; color:#0b5492; font-size:15px;}
+h5 {font-size:16px;}
+.form-group {margin-left:15px !important; margin-right:15px !important;}
+.overflowvisible {overflow:visible;}
+.panel-heading {background-color:#0b5492 !important;}
+.panel-title {color:#fff;}
+.input-group-addon {background-color:#0b5492; color:#0b5492;}
+sup {color:red;}
+input, textarea{ background-color:#fff !important; box-shadow:none !important; border-radius:0 !important; padding:5px;}
+input:focus, textarea:focus {outline:0 !important; box-shadow:none !important; border-color:#0b5492 !important;}
+.form-horizontal {overflow:hidden;}
+.customhr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(11, 84, 146, 0), rgba(11, 84, 146, 0.9), rgba(11, 84, 146, 0)); margin-bottom:20px;
+}
+
+
+/* Quotes Page CSS */
+.Quotes-Section {padding:30px 10px 30px; border-radius:4px; background-color:#fff; margin:95px 10px 10px 270px;}
+.quotes-heading {border-bottom:1px solid #c9c9c9; overflow:hidden;}
+.quotes-heading h4 {margin:5px; float:left; font-size:16px; color:#0b5492;}
+.right-btns {overflow:hidden; float:right;}
+.right-btns a {text-align:center; position:relative; margin-top:10px; display: inline-block; z-index:1029;  height: 40px;  width: 40px;  margin-right: 5px;  padding: 8px 10px;  transition: all .218s ease;  color: #0b5492;  -webkit-transition: all .218s ease;  -o-transition: all .218s ease;  -moz-transition: all .218s ease;}
+.right-btns a i {font-size:18px;}
+.right-btns a:before {display: block;  content: "";  position: absolute; z-index:-1;  left: 0;  bottom: -1px;  right: 0;  height: 4px; overflow: hidden;background-color: #0b5492;  transition: all .218s ease;}
+.right-btns a:hover:before { height:50px; bottom:0;}
+.right-btns a:hover i { color:#fff;}
+
+#QuoteDetails .panel-body {min-height:80px;}
+#QuoteDetails .input-group {position:relative;}
+.radio-btn {margin-right:20px;}
+.input-group-addon i {color:#fff;}
+#QuoteDetails .sel {margin-top:0px;}
+#QuoteDetails .form-group {margin-bottom:15px;}
+#QuoteDetails .form-group label {margin-bottom:5px;}
+#QuoteDetails .form-group textarea {width:100%; height:45px !important;}
+#QuoteDetails .radio-btn label {color:#333;}
+
+.rightoptions {overflow:hidden;}
+.rightoptions .radio-btn {margin-right:0;}
+.rightoptions .radio-btn label {padding-top:0; padding-bottom:0; margin:0px auto; color:#fff;}
+.rightoptions .radio-btn input[type=radio]:checked ~ label {color:#fff;}
+.rightoptions .radio-btn .check {top:0; border-color:#fff;}
+.rightoptions .radio-btn input[type=radio]:checked ~ .check {border-color:#fff;}
+.rightoptions .radio-btn input[type=radio]:checked ~ .check::before {background-color:#fff;}
+.rightoptions i {margin-right:10px;}
+.rightoptions .fa-plus {margin-left:20px !important;}
+.custom-badge {background-color:#0b5492; color:#fff;}
+.itemdata {overflow:hidden; float:left; margin-right:20px;}
+.badge-success {background-color:#28a745;}
+.badge-danger {background-color:#dc3545;}
+.badge-warning {background-color:#e48c00;}
+.tableoptions .form {float:left; margin-right:30px; margin-top:0px !important; }
+.tableoptions .form:first-child {margin-left:20px;}
+.quoteitems table tbody tr td:first-child .form-group {margin-left:5px !important; margin-right:5px !important;margin-top:5px !important;}
+.quoteitems table thead tr th label {margin-bottom:0px !important;}
+.quoteitems table tbody tr td {vertical-align:middle; padding:5px;}
+.quoteitems table tbody tr td .control-label {margin:0px 20px 0px 15px;}
+.quoteitems table thead tr th {background-color: #0b5492 !important;font-size: 14px; border: 1px solid #b6b8c0 !important; border-left:none !important;}
+.quoteitems table thead tr th:first-child {border-left: 1px solid #b6b8c0 !important;}
+.quoteitems .form {overflow:hidden; margin-top:5px !important;}
+.quoteitems .form-group {margin:0; overflow:hidden;}
+
+.ItemDetails {overflow:hidden;}
+.ItemDetails p {margin-bottom:0px;}
+
+.file-upload {overflow:hidden; min-height:50px; border:2px dotted #0b5492; padding:20px;}
+.file-upload p {margin:10px auto; font-size:18px; color:rgba(11, 84, 146, 0.5);}
+
+.mails table tbody tr td:first-child .form-group {margin-left:5px !important; margin-right:5px !important;margin-top:5px !important;}
+.mails table thead tr th label {margin-bottom:0px !important;}
+.mails table tbody tr td {vertical-align:middle; padding:5px;}
+.mails table tbody tr td .control-label {margin:0px 20px 0px 15px;}
+.mails table thead tr th {background-color: #0b5492 !important;font-size: 14px; border: 1px solid #b6b8c0 !important; border-left:none !important;}
+.mails table thead tr th:first-child {border-left: 1px solid #b6b8c0 !important;}
+.send:after {  content: "\f1d8";}
+.download.button {min-width:135px;}
+.display {font-size:14px;}
+
+.btn-toggle {  margin: 15px 0;  padding: 0;  position: relative;  border: none;  height: 20px;  width: 45px;  border-radius: 1.5rem;  color: #6b7381;  background: #bdc1c8;}
+.btn-toggle:focus, .btn-toggle.focus, .btn-toggle:focus.active, .btn-toggle.focus.active {  outline: none;}
+.btn-toggle:before, .btn-toggle:after {  line-height: 20px;  width: 100px;  text-align: center;  font-weight: 600;  font-size: 14px;  position: absolute;  bottom: 0;  transition: opacity 0.25s;}
+.btn-toggle:after {  content: 'Show Quantity';  right: -115px;  opacity: 0.8;}
+.btn-toggle > .handle {  position: absolute;  top: 2px;  left: 3px;  width: 15px;  height: 15px;  border-radius: 1.125rem;  background: #fff;  transition: left 0.25s;}
+.btn-toggle.active {  transition: background-color 0.25s;}
+.btn-toggle.active > .handle {  left: 28px;  transition: left 0.25s;}
+.btn-toggle.active:before {  opacity: 0.5;}
+.btn-toggle.active:after {  opacity: 1; color:#0b5492;}
+.btn-toggle:before, .btn-toggle:after {  color: #6b7381;}
+.btn-toggle.active {  background-color: #0b5492;}
+
+.displayoptions .form {margin-top:10px !important;}
+.displayoptions .radio-btn input[type=radio]:checked ~ .check {border-color:#333;}
+.displayoptions .radio-btn input[type=radio]:checked ~ .check::before {background-color:#333;}
+.displayoptions .radio-btn {margin-right:0;}
+.displayoptions .radio-btn label {padding-top:0; padding-bottom:0; margin:5px auto 0; color:#333;}
+.sorting .radio-btn label {padding-top:0; padding-bottom:0; margin:5px auto 0; color:#333;}
+.displayoptions .radio-btn .check {top:7px; left:2px;}
+.sorting .radio-btn {margin-right:40px;}
+.sampletracking .sel {margin-top:0;}
+.finalize:after {  content: "\f00c";}
+
+table tbody tr td:first-child .form-group {margin-left:5px !important; margin-right:5px !important;margin-top:5px !important;}
+table thead tr th label {margin-bottom:0px !important;}
+table tbody tr td {vertical-align:middle; padding:5px;}
+table tbody tr td .control-label {margin:0px 20px 0px 15px;}
+table thead tr th {background-color: #0b5492 !important;font-size: 14px; border: 1px solid #b6b8c0 !important; border-left:none !important;}
+table thead tr th:first-child {border-left: 1px solid #b6b8c0 !important;}
+
+.panel-title i:hover {cursor:pointer;}
+
+#AddQuoteItemForm button{margin-bottom:15px;}
+#AddQuoteItemForm input {margin-top:1px;}
+
+.QuotewithSamplesForm .form {float:left; width:150px; margin-left:15px;}
+.quotes-heading .form {margin-top:5px !important; margin-left:40px;}
+
+.QuoteDetails #DataTables_Table_0_wrapper .row:nth-child(2) .col-sm-12 {overflow:hidden; overflow-x:auto; padding-left:0; padding-right:0;}
+
+.QuoteDetails #DataTables_Table_0_wrapper .row:nth-child(2) .col-sm-12::-webkit-scrollbar-track{	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);	border-radius: 4px;	background-color: #F5F5F5;}
+.QuoteDetails #DataTables_Table_0_wrapper .row:nth-child(2) .col-sm-12::-webkit-scrollbar{	background-color: #F5F5F5; height:8px;}
+.QuoteDetails #DataTables_Table_0_wrapper .row:nth-child(2) .col-sm-12::-webkit-scrollbar-thumb{	border-radius: 4px;	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,.3);	background-color: #0b5492;}
+.bootstrap-datetimepicker-widget {display:block !important;}

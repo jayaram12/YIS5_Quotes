@@ -1,0 +1,308 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Zulily - YIS 5</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="css/jquery-editable-select.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/zulily.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="zulily-content clearfix">
+  <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+  <div class="panel panel-default clearfix">
+    <div class="panel-heading active" role="tab" id="headingOne">
+      <h5 class="panel-title">
+          Search by Keywords
+      </h5>
+    </div>
+    <div class="" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+            <form>
+                <div class="form-group">
+                  <div class="custom-search-input">
+                          <input type="text" class="form-control" placeholder="Search by Keywords" />
+                      </div>
+                  </div>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 availability">
+    <div class="panel panel-default clearfix">
+      <div class="panel-heading active" role="tab" id="headingOne">
+        <h5 class="panel-title">
+            Availability
+        </h5>
+      </div>
+      <div class="" role="tabpanel" aria-labelledby="headingOne">
+        <div class="panel-body">
+          <form class="form-horizontal col-md-10 col-lg-10 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td width="110"><label class="control-label">Available Quantity :</label></td>
+                        <td width="50"><span>In Stock</span></td>
+                        <td width="10"><span> <strong> > </strong></span></td>
+                        <td width="40"><input class="form-control" type="text" /></td>
+                        <td width="200" class="piecesCheck">
+                          <div class="form-group form">
+                            <input type="checkbox" id="pieces" class="check"/>
+                            <label for="pieces">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                              <span>Pieces</span>
+                          </div>
+                          <div class="form-group form">
+                            <input type="checkbox" id="cases" class="check"/>
+                            <label for="cases">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                              <span>Cases</span>
+                          </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 bycategory">
+      <div class="panel panel-default clearfix">
+        <div class="panel-heading active" role="tab" id="headingOne">
+          <h5 class="panel-title">
+              By Category
+          </h5>
+        </div>
+        <div class="" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <form class="form-horizontal clearfix">
+              <div class="form-group col-md-4 col-lg-3 col-xs-12 col-sm-4">
+                  <label class="control-label">Life Style&nbsp;:</label>
+                  <div class="sel sel--black-panther">
+                    <select name="select-profession" class="form-control">
+                      <option value="">Best Sellers</option>
+                      <option value="">Fashion</option>
+                      <option value="">Accessories</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="form-group col-md-4 col-lg-3 col-xs-12 col-sm-4">
+                  <label class="control-label">Group&nbsp;:</label>
+                  <div class="sel sel--black-panther">
+                    <select name="select-profession" class="form-control">
+                      <option value="">Best Sellers</option>
+                      <option value="">Garden Decor</option>
+                      <option value="">Sale</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="form-group col-md-4 col-lg-3 col-xs-12 col-sm-4">
+                  <label class="control-label">Seasonal&nbsp;:</label>
+                  <div class="sel sel--black-panther">
+                    <select name="select-profession" class="form-control">
+                      <option value="">Christmas</option>
+                      <option value="">Halloween</option>
+                      <option value="">Thanksgiving</option>
+                    </select>
+                  </div>
+              </div>
+              <div class="col-md-12 col-lh-12 col-sm-12 col-xs-12 text-center center-block MarginTop20">
+                  <button type="button" class="button filter">Filter</button>
+                  <button type="button" class="button cancel">Cancel</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+      <div class="panel panel-default clearfix">
+        <div class="panel-heading active" role="tab" id="headingOne">
+          <h5 class="panel-title">
+              Search Results
+          </h5>
+        </div>
+        <div class="" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            <div class="table-responsive col-md-12 col-lg-12 col-sm-12 col-xs-12 filter-result overflowvisible nopaddingleft nopaddingright">
+                <table class="table table-striped table-bordered filtertable" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th style="width:108px;">
+                              <div class="form-group form">
+                                <input type="checkbox" id="checked" class="check checkall"/>
+                                <label for="checked" id="CheckAll">
+                                  <svg viewBox="0,0,50,50">
+                                    <path d="M5 30 L 20 45 L 45 5"></path>
+                                  </svg>
+                                </label>
+                                  <span><strong>Select</strong></span>
+                              </div>
+                            </th>
+                            <th width="60">Image</th>
+                            <th style="width:200px;">Description</th>
+                            <th style="width:60px;">In Stock</th>
+                            <th style="width:40px;">Qty</th>
+                            <th style="width:68px;">List Price</th>
+                            <th style="width:45px;">Price</th>
+                            <th style="width:65px;">Ext Price</th>
+                            <th style="width:65px;">Min Pack</th>
+                            <th style="width:60px;">Min Sell</th>
+                            <th style="width:60px;">Status</th>
+                            <th width="110">Life Style</th>
+                            <th width="110">Group</th>
+                            <th width="110">Seasonalality</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="center-block">
+                              <div class="form-group form">
+                                <input type="checkbox" id="checked2" class="check"/>
+                                <label for="checked2" class="control-label">
+                                  <svg viewBox="0,0,50,50">
+                                    <path d="M5 30 L 20 45 L 45 5"></path>
+                                  </svg>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="magnify">
+                                  <a href="#" class="center-block"><img src="images/18420-s.png" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                              </div>
+                            </td>
+                            <td>Wood Coffee Wall/Table Clock</td>
+                            <td>45</td>
+                            <td>24</td>
+                            <td>$10</td>
+                            <td>$8</td>
+                            <td>$432</td>
+                            <td></td>
+                            <td>$8</td>
+                            <td>Available</td>
+                            <td>Best Sellers</td>
+                            <td>Sale</td>
+                            <td>Christmas</td>
+                        </tr>
+                        <tr>
+                            <td class="center-block">
+                              <div class="form-group form">
+                                <input type="checkbox" id="checked3" class="check"/>
+                                <label for="checked3" class="control-label">
+                                  <svg viewBox="0,0,50,50">
+                                    <path d="M5 30 L 20 45 L 45 5"></path>
+                                  </svg>
+                                </label>
+                              </div>
+                            </td>
+                            <td>
+                              <div class="magnify">
+                                  <a href="#" class="center-block"><img src="images/18420-s.png" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                              </div>
+                            </td>
+                            <td>Wood Coffee Wall/Table Clock</td>
+                            <td>45</td>
+                            <td>24</td>
+                            <td>$10</td>
+                            <td>$8</td>
+                            <td>$432</td>
+                            <td></td>
+                            <td>$8</td>
+                            <td>Available</td>
+                            <td>Best Sellers</td>
+                            <td>Sale</td>
+                            <td>Christmas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lh-12 col-sm-12 col-xs-12 text-center center-block">
+            <button type="button" class="button addtoneworder" disabled>Add To New Order</button>
+            <button type="button" data-toggle="modal" data-target="#OrderNumbers" class="button addtoexistingorder">Add To Existing Order</button>
+            <button type="button" class="button cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+</div>
+<div id="OrderNumbers" class="modal" data-easein="slideUpBigIn" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            ×
+                        </button>
+                        <h4 class="modal-title text-center">
+                            Order Numbers
+                        </h4>
+                    </div>
+                    <div class="modal-body clearfix">
+                        <p>Please select order number, you want to add</p>
+                        <div class="col-md-12 min-height">
+                          <div class="radio-btn">
+                            <input type="radio" id="account" name="selector">
+                            <label for="account">Order#&nbsp;716828</label>
+                            <div class="check"></div>
+                          </div>
+                          <div class="radio-btn">
+                            <input type="radio" id="account2" name="selector">
+                            <label for="account2">Order#&nbsp;716828</label>
+                            <div class="check"></div>
+                          </div>
+                          <div class="radio-btn">
+                            <input type="radio" id="account3" name="selector">
+                            <label for="account3">Order#&nbsp;716828</label>
+                            <div class="check"></div>
+                          </div>
+                          <div class="radio-btn">
+                            <input type="radio" id="account4" name="selector">
+                            <label for="account4">Order#&nbsp;716828</label>
+                            <div class="check"></div>
+                          </div>
+                          <div class="radio-btn">
+                            <input type="radio" id="account5" name="selector">
+                            <label for="account5">Order#&nbsp;716828</label>
+                            <div class="check"></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="col-md-12 col-lh-12 col-sm-12 col-xs-12 text-center center-block">
+                            <button type="button" class="button save">Save</button>
+                            <button type="button" class="button cancel" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/jquery-editable-select.min.js"></script>
+  <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+  <script src="js/dataTables.bootstrap.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+  <script>
+      $(".modal").each(function(l){$(this).on("show.bs.modal",function(l){var o=$(this).attr("data-easein");"shake"==o?$(".modal-dialog").velocity("callout."+o):"pulse"==o?$(".modal-dialog").velocity("callout."+o):"tada"==o?$(".modal-dialog").velocity("callout."+o):"flash"==o?$(".modal-dialog").velocity("callout."+o):"bounce"==o?$(".modal-dialog").velocity("callout."+o):"swing"==o?$(".modal-dialog").velocity("callout."+o):$(".modal-dialog").velocity("transition."+o)})});
+  </script>
+</body>
+</html>

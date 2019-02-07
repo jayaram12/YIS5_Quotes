@@ -1,0 +1,450 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Widgets - YIS 5</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+<link href="css/jquery-editable-select.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.5.2/dragula.min.css" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.css" type="text/css">
+<link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+<link href="css/widgets.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="widgets-section clearfix">
+  <div class="widget-heading">
+      <h3 class="main-color pull-left">Widgets</h3>
+      <div class="right-btns pull-right">
+          <span class="dropdown"><button type="button" class="btn-custom dropdown-toggle" data-toggle="dropdown">Add Widgets&nbsp;&nbsp;<i class="fa fa-plus-circle"></i></button>
+              <ul class="dropdown-menu addwidgets">
+                <form class="horizontal-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search Widget Here" id="txtSearch"/>
+                    </div>
+                </form>
+                  <li class="ViewOrders bluecolor">View Orders
+                      <ul>
+                          <li data-related="viewincompleteorders">View Incomplete Orders</li>
+                          <li data-related="viewshoworders">View Show Orders</li>
+                          <li data-related="viewweborders">View Web Orders</li>
+                      </ul>
+                  </li>
+                  <li class="GeneralProblemsOrders greencolor">General Problems Orders
+                      <ul>
+                          <li data-related="problemsbelow15days">Orders with general problems < 15 days from scheduled Date</li>
+                          <li data-related="problemsabove15days">Orders with general problems > 15 days from scheduled Date</li>
+                          <li data-related="paymentsmovedfromA999999">Need to see all payments which have to be moved from A999999</li>
+                      </ul>
+                  </li>
+                  <li class="Bucketing orangecolor">Bucketing
+                      <ul>
+                          <li data-related="customerswithprepay">Customers with Prepay</li>
+                          <li data-related="customersunder1k">Customers in Bucket 3 and 4 under 1k</li>
+                          <li data-related="customerover1k">Customers in Bucket 3 and 4 Over 1k</li>
+                          <li data-related="customersoverpastdue">Customers in Bucket 2 over 15 days past due</li>
+                      </ul>
+                  </li>
+                  <li class="Calls cyancolor">Calls
+                      <ul>
+                          <li data-related="callstobemadetoday">Calls to be made Today</li>
+                      </ul>
+                  </li>
+                  <li class="CreditIssues stonepinecolor">Credit Issues
+                      <ul>
+                          <li data-related="ordersneedcreditapp">Orders that need Credit App</li>
+                          <li data-related="creditappsapproved">Credit apps to be approved</li>
+                          <li data-related="ordersneedcreditcard">Orders that need Credit Card</li>
+                          <li data-related="orderswithduplicateitems">Orders with duplicate items (check wireframe)</li>
+                          <li data-related="orderswithcreditproblem">Orders with credit problem</li>
+                          <li data-related="ordershavedifferentterms">Orders that have different terms that customers</li>
+                      </ul>
+                  </li>
+                  <li class="KeyUnits darkbluecolor">Key Units
+                      <ul>
+                          <li data-related="keyorders">Key Orders</li>
+                          <li data-related="keyaccounts">Key Accounts</li>
+                      </ul>
+                  </li>
+                  <li class="ScheduledOrderIssues redcolor">Scheduled Order Issues
+                      <ul>
+                          <li data-related="ordersfailedautoschedule">Orders that failed Auto Schedule</li>
+                          <li data-related="ordersover75dollar">Orders over dollar 75 that are not scheduled</li>
+                          <li data-related="ordersunder75dollar">Orders under dollar 75 that are not scheduled</li>
+                          <li data-related="orderswithoutscheduledate">Orders without schedule date</li>
+                      </ul>
+                  </li>
+                  <li class="Claims webpacificcolor">Claims
+                      <ul>
+                          <li data-related="claimreturns">Claim Returns</li>
+                      </ul>
+                  </li>
+              </ul>
+          </span>
+          <button type="button" class="btn-custom">Default Dashboard</button>
+          <button type="button" class="btn-custom">Save Changes</button>
+      </div>
+  </div>
+  <div class="Nowidgetstxt">
+      <h3>You dont have any Widgets active...Please add Widgets from list</h3>
+  </div>
+  <div class="TotalWidgets clearfix">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright view-orders hidetxt">
+        <div class="row DraggableWidgets">
+          <h4 class="main-color">View Orders</h4>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 clickhide addvieworders hidden" id="viewincompleteorders">
+            <div class="widget-content">
+                <div class="vieworders-left">
+                    <i class="fa fa-cart-plus"></i>
+                </div>
+                <div class="vieworders-right hideclick">
+                    <h4>28</h4>
+                    <p>View Incomplete Orders</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 clickhide addvieworders hidden" id="viewshoworders">
+            <div class="widget-content">
+                <div class="vieworders-left">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+                <div class="vieworders-right hideclick">
+                    <h4>12</h4>
+                    <p>View Show Orders</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 clickhide addvieworders hidden" id="viewweborders">
+            <div class="widget-content">
+                <div class="vieworders-left">
+                    <i class="fa fa-globe"></i>
+                </div>
+                <div class="vieworders-right hideclick">
+                    <h4>9</h4>
+                    <p>View Web Orders</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright general-problem-orders hidetxt">
+        <h4 class="main-color MarginTop20">General Problem Orders</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addproblems hidden" id="problemsbelow15days">
+            <div class="widget-content">
+                <div class="generalproblems-left">
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+                <div class="generalproblems-right hideclick">
+                    <h4>5</h4>
+                    <p>Orders with General Problems < 15 days from Scheduled Date</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+            <div class="widget-content">
+                <div class="generalproblems-left">
+                    <i class="fa fa-exclamation-triangle"></i>
+                </div>
+                <div class="generalproblems-right">
+                    <h4>2</h4>
+                    <p>Orders with Items below Cost</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addproblems hidden" id="problemsabove15days">
+            <div class="widget-content">
+                <div class="generalproblems-left">
+                    <i class="fa fa-exclamation-triangle"></i>
+                </div>
+                <div class="generalproblems-right hideclick">
+                    <h4>0</h4>
+                    <p>Orders with General Problems > 15 days from Scheduled Date</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addproblems hidden" id="paymentsmovedfromA999999">
+            <div class="widget-content">
+                <div class="generalproblems-left">
+                    <i class="fa fa-check-square-o"></i>
+                </div>
+                <div class="generalproblems-right hideclick">
+                    <h4>268</h4>
+                    <p>Need to see all Payments which have to be moved from A999999</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright bucketing hidetxt">
+        <h4 class="main-color MarginTop20">Bucketing</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addbuckets hidden" id="customerswithprepay">
+            <div class="widget-content">
+                <div class="bucketing-left">
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+                <div class="bucketing-right hideclick">
+                    <h4>1</h4>
+                    <p>Customers with Prepay</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addbuckets hidden" id="customersunder1k">
+            <div class="widget-content">
+                <div class="bucketing-left">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="bucketing-right hideclick">
+                    <h4>88</h4>
+                    <p>Customers in Bucket 3 and 4 under 1k</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addbuckets hidden" id="customerover1k">
+            <div class="widget-content">
+                <div class="bucketing-left">
+                    <i class="fa fa-users"></i>
+                </div>
+                <div class="bucketing-right hideclick">
+                    <h4>13</h4>
+                    <p>Customers in Bucket 3 and 4 Over 1k</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 clickhide addbuckets hidden" id="customersoverpastdue">
+            <div class="widget-content">
+                <div class="bucketing-left">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+                <div class="bucketing-right hideclick">
+                    <h4>324</h4>
+                    <p>Customers in Bucket 2 over 15 days past due</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright callshide hidetxt">
+        <h4 class="main-color MarginTop20">Calls</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 clickhide addcalls hidden" id="callstobemadetoday">
+            <div class="widget-content">
+                <div class="calls-left">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="calls-right hideclick">
+                    <h4>1534</h4>
+                    <p>Calls to be made Today</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright credit-issues hidetxt">
+        <h4 class="main-color MarginTop20">Credit Issues</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addcreditissues hidden" id="ordersneedcreditapp">
+            <div class="widget-content">
+                <div class="creditissues-left">
+                    <i class="fa fa-clipboard"></i>
+                </div>
+                <div class="creditissues-right hideclick">
+                    <h4>1534</h4>
+                    <p>Orders that need Credit App</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addcreditissues hidden" id="creditappsapproved">
+            <div class="widget-content">
+                <div class="creditissues-left">
+                    <i class="fa fa-edit"></i>
+                </div>
+                <div class="creditissues-right hideclick">
+                    <h4>6</h4>
+                    <p>Credit apps to be approved</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addcreditissues hidden" id="ordersneedcreditcard">
+            <div class="widget-content">
+                <div class="creditissues-left">
+                    <i class="fa fa-credit-card"></i>
+                </div>
+                <div class="creditissues-right hideclick">
+                    <h4>20</h4>
+                    <p>Orders that need Credit Card</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addcreditissues hidden" id="orderswithduplicateitems">
+            <div class="widget-content">
+                <div class="creditissues-left">
+                    <i class="fa fa-files-o"></i>
+                </div>
+                <div class="creditissues-right hideclick">
+                    <h4>0</h4>
+                    <p>Orders with Duplicate Items</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addcreditissues hidden" id="orderswithcreditproblem">
+            <div class="widget-content">
+                <div class="creditissues-left">
+                    <i class="fa fa-exclamation-circle"></i>
+                </div>
+                <div class="creditissues-right hideclick">
+                    <h4>4086</h4>
+                    <p>Orders with Credit Problem</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addcreditissues hidden" id="ordershavedifferentterms">
+            <div class="widget-content">
+                <div class="creditissues-left">
+                    <i class="fa fa-list-alt"></i>
+                </div>
+                <div class="creditissues-right hideclick">
+                    <h4>43</h4>
+                    <p>Orders that have different Terms</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright key-units hidetxt">
+        <h4 class="main-color MarginTop20">Key Units</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addkeyunits hidden" id="keyorders">
+            <div class="widget-content">
+                <div class="keyunits-left">
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+                <div class="keyunits-right hideclick">
+                    <h4>0</h4>
+                    <p>Key Orders</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addkeyunits hidden" id="keyaccounts">
+            <div class="widget-content">
+                <div class="keyunits-left">
+                    <i class="fa fa-user-circle-o"></i>
+                </div>
+                <div class="keyunits-right hideclick">
+                    <h4>0</h4>
+                    <p>Key Accounts</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright schedule-order-issues hidetxt">
+        <h4 class="main-color MarginTop20">Scheduled Order Issues</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 MarginBottom10 clickhide addorderissues hidden" id="ordersfailedautoschedule">
+            <div class="widget-content">
+                <div class="orderissues-left">
+                    <i class="fa fa-exclamation-triangle"></i>
+                </div>
+                <div class="orderissues-right hideclick">
+                    <h4>0</h4>
+                    <p>Orders that failed Auto Schedule</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 MarginBottom10 clickhide addorderissues hidden" id="ordersover75dollar">
+            <div class="widget-content">
+                <div class="orderissues-left">
+                    <i class="fa fa-usd"></i>
+                </div>
+                <div class="orderissues-right hideclick">
+                    <h4>10</h4>
+                    <p>Orders over Dollar 75 that are not Scheduled</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 MarginBottom10 clickhide addorderissues hidden" id="ordersunder75dollar">
+            <div class="widget-content">
+                <div class="orderissues-left">
+                    <i class="fa fa-usd"></i>
+                </div>
+                <div class="orderissues-right hideclick">
+                    <h4>10</h4>
+                    <p>Orders under Dollar 75 that are not Scheduled</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12 MarginBottom10 clickhide addorderissues hidden" id="orderswithoutscheduledate">
+            <div class="widget-content">
+                <div class="orderissues-left">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                <div class="orderissues-right hideclick">
+                    <h4>15</h4>
+                    <p>Orders without Schedule Date</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright claims hidetxt">
+        <h4 class="main-color MarginTop20">Claims</h4>
+        <div class="row DraggableWidgets">
+        <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12 MarginBottom10 clickhide addclaims hidden" id="claimreturns">
+            <div class="widget-content">
+                <div class="claims-left">
+                    <i class="fa fa-reply fa-flip-vertical"></i>
+                </div>
+                <div class="claims-right hideclick">
+                    <h4>2</h4>
+                    <p>Claim Returns</p>
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/3.5.2/dragula.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="js/dataTables.bootstrap.js" type="text/javascript"></script>
+<script src="js/jquery-editable-select.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+
+<script src="js/custom.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,1086 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Quotes - YIS 5</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="css/jquery-editable-select.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap-datetimepicker.css" />
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+<link href="css/quotes.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="Quotes-Section clearfix">
+    <div class="quotes-heading">
+        <h4>Quote#: 17530</h4>
+        <div class="form MarginTop20">
+          <input type="checkbox" id="check" class="check"/>
+          <label for="check">
+            <svg viewBox="0,0,50,50">
+              <path d="M5 30 L 20 45 L 45 5"></path>
+            </svg>
+          </label>
+          <span>Make Quote Public</span>
+        </div>
+        <div class="right-btns">
+            <a href="" class="borderbottom" data-toggle="tooltip" data-placement="top" data-original-title="Go Back"><i class="fa fa-mail-reply-all"></i></a>
+        </div>
+    </div>
+      <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default MarginTop20 QuoteDetails">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                  <a role="button" data-toggle="collapse" href="#QuoteDetails" aria-expanded="true" aria-controls="collapseOne">
+                    Quote Details
+                  </a>
+                </h5>
+              </div>
+              <div class="panel-collapse collapse in" role="tabpanel" id="QuoteDetails" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <form class="form-horizontal">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+                        <div class="col-md-4 col-lg-3 col-sm-4 col-xs-12">
+                          <div class="form-group">
+                              <label class="control-label main-color">Followup Date</label>
+                              <div class="input-group">
+                                  <input type="text" class="form-control" id='FollowupDate'>
+                                  <div class="input-group-addon">
+                                      <i class="fa fa-calendar"></i>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-5 col-lg-offset-2 col-sm-6 col-xs-12">
+                          <div class="radio-btn ">
+                            <input type="radio" id="withoutsamples" value="red" name="selector" class="radioclick" checked>
+                            <label for="withoutsamples">Quote without Samples</label>
+                            <div class="check"></div>
+                          </div>
+                          <div class="radio-btn">
+                            <input type="radio" id="withsamples" name="selector" class="radioclick">
+                            <label for="withsamples">Quote with Samples</label>
+                            <div class="check"></div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Quote# :</label>
+                                <input type="text" class="form-control" value="17530" readonly/>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Quote Type :</label>
+                                <div class="sel sel--black-panther">
+                                  <select name="select-quote-type" class="form-control">
+                                    <option value="" class="active">Domestic Quotes</option>
+                                    <option value="">Domestic Quotes</option>
+                                    <option value="">Direct Import</option>
+                                  </select>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Customer# :</label>
+                                <div class="input-group">
+                                  <input type="text" class="form-control" value="A001541"/>
+                                  <div class="input-group-addon">
+                                      <a href="#" data-toggle="tooltip" data-placement="top" data-original-title="Seach Customer"><i class="fa fa-user-plus"></i></a>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Customer Name :</label>
+                                <input type="text" class="form-control" value="Bealls Department Stores"/>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Created on :</label>
+                                <input type="text" class="form-control" value="08/21/2018" readonly/>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Created by :</label>
+                                <input type="text" class="form-control" value="AndrewY" readonly/>
+                            </div>
+                          </div>
+
+
+                          <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Buyer :&nbsp;<sup>*</sup></label>
+                                <select class="editable-select">
+                                  <option selected>Robin Moreland</option>
+                                </select>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Rep Group :</label>
+                                <input type="text" class="form-control" value="Andrew" readonly/>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Sales Rep :</label>
+                                <div class="sel sel--black-panther">
+                                  <select name="select-quote-type" class="form-control">
+                                    <option value="">Amy Short</option>
+                                    <option value="" class="active">Andrew Yang</option>
+                                    <option value="">Brittney Nolan</option>
+                                    <option value="">Chi Yang</option>
+                                    <option value="">Dawn Palmar</option>
+                                    <option value="">Donell Strine</option>
+                                    <option value="">Dori Dori</option>
+                                    <option value="">Domisha Tardzer</option>
+                                    <option value="">Van Carson Gib Carson Jr..**</option>
+                                    <option value="">Van Carson Don Grover</option>
+                                    <option value="">Van Carson Dan O'brien*</option>
+                                    <option value="">Van Carson Kerry Cowher</option>
+                                    <option value="">Van Carson Linda Keegan</option>
+                                    <option value="">Van Carson Steve Goecke</option>
+                                    <option value="">Van Carson Steve Walther</option>
+                                  </select>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Email :</label>
+                                <input type="email" class="form-control"/>
+                            </div>
+                          </div>
+
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Phone :</label>
+                                <input type="tel" class="form-control"/>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Discount% :</label>
+                                <input type="number" class="form-control" value="0"/>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Show % of Available Qty :</label>
+                                <input type="number" class="form-control" value="100"/>
+                            </div>
+                          </div>
+                          <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                <label class="control-label">Notes&nbsp;:</label>
+                                <textarea></textarea>
+                              </div>
+                          </div>
+                          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright" id="WithoutSamples">
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Quote for&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <div class="sel sel--black-panther">
+                                    <select name="select-quote-type" class="form-control">
+                                      <option value="">Customer</option>
+                                      <option value="">Road</option>
+                                      <option value="">Show</option>
+                                      <option value="">Showroom</option>
+                                    </select>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Quote for Value&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <input type="text" class="form-control"/>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Sample Req Date&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <div class="input-group date" data-provide="datepicker">
+                                      <input type="text" class="form-control">
+                                      <div class="input-group-addon">
+                                          <i class="fa fa-calendar"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Attn&nbsp;:</label>
+                                  <input type="text" class="form-control"/>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-4 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Shipping Address&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <input type="text" class="form-control"/>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">City&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <input type="text" class="form-control"/>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Zip&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <input type="number" class="form-control"/>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">State&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <div class="sel sel--black-panther">
+                                    <select name="select-quote-type" class="form-control">
+                                      <option value="">Alabama</option>
+                                      <option value="">Alaska</option>
+                                      <option value="">Arizona</option>
+                                      <option value="">Arkansas</option>
+                                      <option value="">California</option>
+                                      <option value="">Colorada</option>
+                                    </select>
+                                  </div>
+                              </div>
+                            </div>
+
+                            <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                              <div class="form-group">
+                                  <label class="control-label main-color">Country&nbsp;:&nbsp;<sup>*</sup></label>
+                                  <div class="sel sel--black-panther">
+                                    <select name="select-quote-type" class="form-control">
+                                      <option value="">Canada</option>
+                                      <option value="">China</option>
+                                      <option value="">Jamaica</option>
+                                      <option value="">Japan</option>
+                                      <option value="">Mexico</option>
+                                      <option value="">Panama</option>
+                                      <option value="" selected>USA</option>
+                                    </select>
+                                  </div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
+                              <button type="button" class="button save MarginTop10">Save</button>
+                          </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default MarginTop20 QuoteDetails">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    Quote Items
+                    <div class="rightoptions pull-right">
+                      <div class="radio-btn">
+                        <input type="radio" id="Active" name="selector" checked>
+                        <label for="Active">Active</label>
+                        <div class="check"></div>
+                      </div>
+                      <div class="radio-btn ">
+                        <input type="radio" id="All" name="selector">
+                        <label for="All">All</label>
+                        <div class="check"></div>
+                      </div>
+                      <i class="fa fa-plus" id="AddQuoteItem"></i>
+                      <i class="fa fa-filter"></i>
+                    </div>
+                </h5>
+              </div>
+              <div class="" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopaddingleft nopaddingright" id="AddQuoteItemForm">
+                        <form class="form-horizontal MarginBottom20">
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                <div class="form-group">
+                                    <label class="control-label">Item#&nbsp;<sup>*</sup>&nbsp;:</label>
+                                    <input type="text" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label">Description&nbsp;:</label>
+                                <input type="text" class="form-control"/>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label">Status&nbsp;:</label>
+                                <input type="text" class="form-control" readonly/>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label">Min Sell&nbsp;:</label>
+                                <input type="text" class="form-control" readonly/>
+                            </div>
+                          </div>
+                          <div class="QuotewithSamplesForm">
+                          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form">
+                              <input type="checkbox" id="InStock" class="check"/>
+                              <label for="InStock">
+                                <svg viewBox="0,0,50,50">
+                                  <path d="M5 30 L 20 45 L 45 5"></path>
+                                </svg>
+                              </label>
+                              <span>In Stock</span>
+                            </div>
+                            <div class="form">
+                              <input type="checkbox" id="customer" class="check"/>
+                              <label for="customer">
+                                <svg viewBox="0,0,50,50">
+                                  <path d="M5 30 L 20 45 L 45 5"></path>
+                                </svg>
+                              </label>
+                              <span>Customer</span>
+                            </div>
+                            <div class="form">
+                              <input type="checkbox" id="sampleroom" class="check"/>
+                              <label for="sampleroom">
+                                <svg viewBox="0,0,50,50">
+                                  <path d="M5 30 L 20 45 L 45 5"></path>
+                                </svg>
+                              </label>
+                              <span>Sample Room</span>
+                            </div>
+                            <div class="form">
+                              <input type="checkbox" id="china" class="check"/>
+                              <label for="china">
+                                <svg viewBox="0,0,50,50">
+                                  <path d="M5 30 L 20 45 L 45 5"></path>
+                                </svg>
+                              </label>
+                              <span>China</span>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label">Sample Sent From&nbsp;<sup>*</sup>&nbsp;:</label>
+                                <div class="sel sel--black-panther">
+                                  <select name="select-quote-type" class="form-control">
+                                    <option value=""></option>
+                                  </select>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label">Quantity&nbsp;:</label>
+                                <input type="number" class="form-control"/>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label main-color">Followup Date</label>
+                                <div class="input-group date" data-provide="datepicker">
+                                    <input type="text" class="form-control">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
+                              <button type="button" class="button save MarginTop20">Save</button>
+                              <button type="button" class="button cancel">Cancel</button>
+                          </div>
+                        </form>
+                        <hr class="customhr clearfix"/>
+                    </div>
+
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopaddingleft nopaddingright">
+                        <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                            <div class="itemdata">
+                                <label>Total Items :</label>
+                                <span class="badge custom-badge">2</span>
+                            </div>
+                            <div class="itemdata">
+                                <label>Items for which action is taken :</label>
+                                <span class="badge badge-success">0</span>
+                            </div>
+                            <div class="itemdata">
+                                <label>Items unable to fulfil :</label>
+                                <span class="badge badge-danger">0</span>
+                            </div>
+                            <div class="itemdata">
+                                <label>Items for which no action is taken :</label>
+                                <span class="badge badge-warning">0</span>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12 tableoptions">
+                          <div class="form">
+                            <input type="checkbox" id="Availability" class="check"/>
+                            <label for="Availability">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Item Availability</span>
+                          </div>
+                          <div class="form">
+                            <input type="checkbox" id="Design" class="check"/>
+                            <label for="Design">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Design</span>
+                          </div>
+                          <div class="form">
+                            <input type="checkbox" id="Samples" class="check"/>
+                            <label for="Samples">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Samples</span>
+                          </div>
+                          <div class="form">
+                            <input type="checkbox" id="Price" class="check"/>
+                            <label for="Price">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Price Negotiation</span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+                      <div class="table-responsive col-md-12 col-lg-12 col-sm-12 col-xs-12 quoteitems overflowvisible nopaddingleft nopaddingright MarginTop10">
+                        <table class="display nowrap table table-bordered table-striped quoteitemstable" style="width:100%">
+                            <thead>
+                                  <tr id="TableOptionsHeader">
+                                      <th colspan="8"></th>
+                                      <th colspan="6" class="availability">Item Availability</th>
+                                      <th colspan="3" class="design">Design</th>
+                                      <th colspan="4" class="samples">Sample</th>
+                                      <th colspan="2" class="negotiation">Price Negotiation</th>
+                                      <th colspan="2">Order Details</th>
+                                      <th></th>
+                                  </tr>
+                                    <tr>
+                                        <th style="width:90px;">
+                                          <div class="form-group form">
+                                            <input type="checkbox" id="checked" class="check checkall"/>
+                                            <label for="checked" id="CheckAll">
+                                              <svg viewBox="0,0,50,50">
+                                                <path d="M5 30 L 20 45 L 45 5"></path>
+                                              </svg>
+                                            </label>
+                                              <span><strong>All</strong></span>
+                                          </div>
+                                        </th>
+                                        <th>Image</th>
+                                        <th>Item#</th>
+                                        <th width="400">Description</th>
+                                        <th>Status</th>
+                                        <th>Min Sell</th>
+                                        <th>Quantity</th>
+                                        <th>Followup Date</th>
+                                        <th class="availability">Instock</th>
+                                        <th class="availability">Cutomer</th>
+                                        <th class="availability">Sample Room</th>
+                                        <th class="availability">Show Room</th>
+                                        <th class="availability">China</th>
+                                        <th class="availability">Available Date</th>
+                                        <th class="design">Need</th>
+                                        <th class="design">Sent</th>
+                                        <th class="design">Approved</th>
+                                        <th class="samples">Need</th>
+                                        <th class="samples">Sent From</th>
+                                        <th class="samples">Sent</th>
+                                        <th class="samples">Approved</th>
+                                        <th class="negotiation">Quoted</th>
+                                        <th class="negotiation">Approved</th>
+                                        <th>PO#</th>
+                                        <th>Order#</th>
+                                        <th>Actions</th>
+                                    </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                  <td class="center-block">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="checked2" class="check"/>
+                                      <label for="checked2" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td>
+                                    <div class="magnify">
+                                        <a href="#" class="center-block"><img src="images/18420-s.png" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                                    </div>
+                                  </td>
+                                  <td>13885</td>
+                                  <td>Resin Deer Gets Hunter</td>
+                                  <td><span class="badge badge-success">Available</span></td>
+                                  <td>1</td>
+                                  <td>3</td>
+                                  <td>09/17/2018</td>
+                                  <td class="ItemAvailability">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="Instock" class="check"/>
+                                      <label for="Instock" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="ItemAvailability">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="Customer" class="check"/>
+                                      <label for="Customer" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="ItemAvailability">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="sampleroom" class="check"/>
+                                      <label for="sampleroom" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="ItemAvailability">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="showroom" class="check"/>
+                                      <label for="showroom" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="ItemAvailability">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="china" class="check"/>
+                                      <label for="china" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="ItemAvailability">09/04/2018</td>
+                                  <td class="DesignOptions">
+                                    <div class="form">
+                                      <input type="checkbox" id="Design" class="check" checked/>
+                                      <label for="Design">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                      <span>09/03/2018</span>
+                                    </div>
+                                  </td>
+                                  <td class="DesignOptions">
+                                    <div class="form">
+                                      <input type="checkbox" id="Design2" class="check" checked/>
+                                      <label for="Design2">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                      <span>09/05/2018</span>
+                                    </div>
+                                  </td>
+                                  <td class="DesignOptions">
+                                    <div class="form">
+                                      <input type="checkbox" id="Design3" class="check" checked/>
+                                      <label for="Design3">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                      <span>09/12/2018</span>
+                                    </div>
+                                  </td>
+                                  <td class="SampleOptions">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="sampleneed" class="check"/>
+                                      <label for="sampleneed" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="SampleOptions">Customer</td>
+                                  <td class="SampleOptions">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="samplesent" class="check"/>
+                                      <label for="samplesent" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="SampleOptions">
+                                    <div class="form-group form">
+                                      <input type="checkbox" id="sampleapproved" class="check"/>
+                                      <label for="sampleapproved" class="control-label">
+                                        <svg viewBox="0,0,50,50">
+                                          <path d="M5 30 L 20 45 L 45 5"></path>
+                                        </svg>
+                                      </label>
+                                    </div>
+                                  </td>
+                                  <td class="PriceOptions">$6.50</td>
+                                  <td class="PriceOptions">$6.50</td>
+                                  <td></td>
+                                  <td></td>
+                                  <td>
+                                    <a href="#" class="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
+                                    <a href="#" class="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash deletepopover"></i></a>
+                                  </td>
+                              </tr>
+                              </tbody>
+                            </table>
+                      </div>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+          <div class="col-md-7 col-lg-7 col-sm-6 col-xs-12">
+            <div class="panel panel-default MarginTop20 ItemDetails">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    Quote Item Details
+                </h5>
+              </div>
+              <div class="" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <p><label>Description&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>Resin Deer Gets</span></p>
+                        <p><label>Case Pk&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>16</span></p>
+                        <p><label>Case Wt&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>112</span></p>
+                        <p><label>Case Cube&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>2.85</span></p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <p><label>Inner Pack&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>1</span></p>
+                        <p><label>ELC &nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>2.97</span></p>
+                        <p><label>Avg $&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>$2.53</span></p>
+                        <p><label>Life Style&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>Lodge/ Woodland</span></p>
+                        <p><label>Measures&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>5.25  3.5  7</span></p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <p><label>Status&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>Active</span></p>
+                        <p><label>Pkg&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>Color Photo Box</span></p>
+                        <p><label>Pg #&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>E312f</span></p>
+                        <p><label>Duty %&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>0</span></p>
+                        <p><label>Price levels&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>6.50  5.85  5.20  4.55  3.90  0.00</span></p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <p><label>UPC#&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>096587138854</span></p>
+                        <p><label>On Hand Available&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>372</span></p>
+                        <p><label>OW Available&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>0</span></p>
+                        <p><label>PO Available&nbsp;:</label>&nbsp;&nbsp;&nbsp;<span>0</span></p>
+                    </div>
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                      <p><strong>Note :</strong>Factory#: F71544 ** Pack in bubble ** Pack in color box #61-Wildlife ** 1pc/ color box ** Title on color box "Resin Deer Gets Hunter"
+ <br/>*change case cube from 2.38' to 2.62 - great item</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-lg-5 col-sm-6 col-xs-12">
+            <div class="panel panel-default MarginTop20 ItemDetails">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    Quote Email Communication
+                </h5>
+              </div>
+              <div class="" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="file-upload">
+                        <p class="text-center">Drag & Drop Outlook message here</p>
+                    </div>
+                    <div class="table-responsive col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright mails MarginTop20">
+                        <table class="table table-striped table-bordered quoteitemstable" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Subject</th>
+                                    <th>Received Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="text-center">No Messages Found</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div class="panel panel-default MarginTop20 ItemDetails">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    Reporting Options
+                </h5>
+              </div>
+              <div class="" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body displayoptions">
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <form class="horizontal-form">
+                          <div class="form-group">
+                            <label class="control-label">Send Email&nbsp;:</label>
+                            <div class="sel sel--black-panther">
+                              <select name="reportemail" class="form-control">
+                                <option value="">abc@xyz.com</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="control-label">Email&nbsp;:</label>
+                            <input type="email" class="form-control height32"/>
+                          </div>
+                          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 center-block text-center">
+                              <button type="button" class="button send">Send</button>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-6 col-xs-12">
+                        <form class="horizontal-form">
+                          <div class="form-group">
+                            <label class="control-label">Export Options&nbsp;:</label>
+                            <div class="sel sel--black-panther">
+                              <select name="export" class="form-control">
+                                <option value="">Sample Room Items</option>
+                                <option value="">Items from China</option>
+                                <option value="">Instock/Customer</option>
+                                <option value="">Showroom Items</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 center-block text-center">
+                              <button type="button" class="button save download MarginTop20">Download</button>
+                          </div>
+                        </form>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                        <p class="main-color display">Display Options</p>
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                        <button type="button" class="btn btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+                          <div class="handle"></div>
+                        </button>
+                        <div class="form">
+                          <input type="checkbox" id="ShowOH" class="check"/>
+                          <label for="ShowOH">
+                            <svg viewBox="0,0,50,50">
+                              <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                          </label>
+                          <span>Show OH Available Quantity</span>
+                        </div>
+                        <div class="form">
+                          <input type="checkbox" id="ShowAll" class="check"/>
+                          <label for="ShowAll">
+                            <svg viewBox="0,0,50,50">
+                              <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                          </label>
+                          <span>Show All Available</span>
+                        </div>
+                        <div class="form">
+                          <input type="checkbox" id="ShowDate" class="check"/>
+                          <label for="ShowDate">
+                            <svg viewBox="0,0,50,50">
+                              <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                          </label>
+                          <span>Show Available Date</span>
+                        </div>
+                        <div class="form">
+                          <input type="checkbox" id="Showquoted" class="check" checked/>
+                          <label for="Showquoted">
+                            <svg viewBox="0,0,50,50">
+                              <path d="M5 30 L 20 45 L 45 5"></path>
+                            </svg>
+                          </label>
+                          <span>Show Quoted Prices</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                      <div class="form" style="margin-top:40px !important;">
+                        <input type="checkbox" id="Showdiscount" class="check" checked/>
+                        <label for="Showdiscount">
+                          <svg viewBox="0,0,50,50">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                          </svg>
+                        </label>
+                        <span>Show Discount %</span>
+                      </div>
+                      <div class="form">
+                        <input type="checkbox" id="Showmeasures" class="check" checked/>
+                        <label for="Showmeasures">
+                          <svg viewBox="0,0,50,50">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                          </svg>
+                        </label>
+                        <span>Show Item Measures</span>
+                      </div>
+                      <div class="form MarginBottom10">
+                        <input type="checkbox" id="printheadernotes" class="check" checked/>
+                        <label for="printheadernotes">
+                          <svg viewBox="0,0,50,50">
+                            <path d="M5 30 L 20 45 L 45 5"></path>
+                          </svg>
+                        </label>
+                        <span>Print Header Notes</span>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" id="4items" name="selector" checked>
+                        <label for="4items">Print 4 Items/Page</label>
+                        <div class="check"></div>
+                      </div>
+                      <div class="radio-btn">
+                        <input type="radio" id="1item" name="selector">
+                        <label for="1item">Print 1 Item/Page</label>
+                        <div class="check"></div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-lg-2 col-sm-6 col-xs-12 sorting">
+                    <p class="main-color display">Sorting Options</p>
+                    <div class="radio-btn MarginTop20">
+                      <input type="radio" id="byitem" name="selector" checked>
+                      <label for="byitem">By Item Number</label>
+                      <div class="check"></div>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" id="bygroup" name="selector" checked>
+                      <label for="bygroup">By Group</label>
+                      <div class="check"></div>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" id="bycatalog" name="selector" checked>
+                      <label for="bycatalog">By Catalog Page</label>
+                      <div class="check"></div>
+                    </div>
+                    <div class="radio-btn">
+                      <input type="radio" id="byscan" name="selector" checked>
+                      <label for="byscan">BY Scan Page</label>
+                      <div class="check"></div>
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-6">
+                <div class="panel panel-default MarginTop20">
+                  <div class="panel-heading" role="tab" id="headingOne">
+                    <h5 class="panel-title">
+                        Sample Tracking
+                        <div class="rightoptions pull-right">
+                          <i class="fa fa-plus" id="SampleTracking"></i>
+                          <i class="fa fa-filter"></i>
+                        </div>
+                    </h5>
+                  </div>
+                  <div class="" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body sampletracking">
+                            <form class="horizontal-form" id="SampleTrackingForm">
+                              <div class="row">
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                <label class="control-label">Ship From&nbsp;<sup>*</sup>&nbsp;:</label>
+                                <div class="sel sel--black-panther">
+                                  <select name="shipfrom" class="form-control">
+                                    <option value=""></option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                <label class="control-label">Ship To&nbsp;<sup>*</sup>&nbsp;:</label>
+                                <div class="sel sel--black-panther">
+                                  <select name="shipto" class="form-control">
+                                    <option value="">Customer</option>
+                                    <option value="">Customer</option>
+                                    <option value="">Road</option>
+                                    <option value="" disabled>Showroom Name</option>
+                                    <option value="">Atlanta</option>
+                                    <option value="">Dundee</option>
+                                    <option value="">Columbus</option>
+                                    <option value="">Denver</option>
+                                    <option value="">Dallas</option>
+                                    <option value="">NewYork</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                  <label class="control-label main-color">Ship Date</label>
+                                  <div class="input-group">
+                                      <input type="text" class="form-control" id='ShipDate'>
+                                      <div class="input-group-addon">
+                                          <i class="fa fa-calendar"></i>
+                                      </div>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                <label class="control-label">Ship Via&nbsp;<sup>*</sup>&nbsp;:</label>
+                                <div class="sel sel--black-panther">
+                                  <select name="shipvia" class="form-control">
+                                    <option value="">ABF</option>
+                                    <option value="">Bestway</option>
+                                    <option value="">Dayton</option>
+                                    <option value="">Estes</option>
+                                    <option value="">FedEx Ground</option>
+                                    <option value="">FedEx Economy</option>
+                                    <option value="">Road Runner</option>
+                                  </select>
+                                </div>
+                              </div>
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                  <label class="control-label main-color">Tracking# :</label>
+                                  <input type="number" class="form-control"/>
+                              </div>
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                  <label class="control-label main-color">Cost$ :</label>
+                                  <input type="number" class="form-control"/>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="form-group col-md-4 col-lg-3 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+                                  <label class="control-label main-color">Note :</label>
+                                  <textarea class="form-control"></textarea>
+                              </div>
+                              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
+                                  <button type="button" class="button save MarginTop10">Save</button>
+                                  <button type="button" class="button cancel">Cancel</button>
+                              </div>
+                            </div>
+                            </form>
+                            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                              <div class="table-responsive col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright MarginTop10">
+                                <table class="display nowrap table table-bordered table-striped quoteitemstable" style="width:100%">
+                                    <thead>
+                                      <tr>
+                                          <th>Ship From</th>
+                                          <th>Ship To</th>
+                                          <th>Ship Date</th>
+                                          <th>Ship Via</th>
+                                          <th>Tracking#</th>
+                                          <th>Cost$</th>
+                                          <th>Note</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                      <tr>
+                                          <td colspan="7"></td>
+                                      </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                            <div class="form-group col-md-7 col-lh-8 col-sm-12 col-xs-12">
+                                <label class="control-label main-color">Notes :</label>
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xs-12 col-sm-6">
+                    <div class="panel panel-default MarginTop20">
+                      <div class="panel-heading" role="tab" id="headingOne">
+                        <h5 class="panel-title">
+                            Items Sent
+                        </h5>
+                      </div>
+                      <div class="" role="tabpanel" aria-labelledby="headingOne">
+                        <div class="panel-body sampletracking">
+                          <div class="table-responsive col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright MarginTop10">
+                            <table class="display nowrap table table-bordered table-striped quoteitemstable" style="width:100%">
+                                <thead>
+                                  <tr>
+                                      <th>Select</th>
+                                      <th>Image</th>
+                                      <th>Item</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                  <tr>
+                                      <td colspan="3" class="text-center">No Items</td>
+                                  </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
+                <button type="button" class="button save">Save</button>
+                <button type="button" class="button finalize">Finalize</button>
+                <button type="button" class="button cancel">Close</button>
+            </div>
+      </div>
+</body>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/jquery-editable-select.min.js"></script>
+<script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+<script src="js/dataTables.bootstrap.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+<script src="js/custom.js" type="text/javascript"></script>
+
+</html>

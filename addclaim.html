@@ -1,0 +1,687 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Claims - YIS 5</title>
+<link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="css/jquery-editable-select.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="Editclaim clearfix">
+    <div class="editclaim-heading">
+        <h4>Add Claim</h4>
+        <div class="right-btns">
+            <a href="" class="borderbottom"><i class="fa fa-mail-reply-all"></i></a>
+            <a href="" class="borderbottom"><i class="fa fa-filter"></i></a></a>
+            <!-- <a href="" class="borderbottom"><i class="fa fa-plus"></i></a> -->
+        </div>
+    </div>
+    <div class="editclaim-content clearfix">
+        <form class="form-horizontal clearfix">
+            <div class="form-group col-md-4 col-lg-2 col-sm-6 col-xs-12">
+                <label class="control-label">Claim# :</label>
+                <label class="control-label">CL0143534</label>
+            </div>
+            <div class="form-group col-md-4 col-lg-2 col-sm-6 col-xs-12">
+                <label class="control-label">Claim Date :</label>
+                <label class="control-label">08/01/2018</label>
+            </div>
+            <div class="form-group col-md-4 col-lg-2 col-sm-6 col-xs-12">
+                <input class="inputhover form-control" id="Caller" type="text" placeholder="Caller Name..." /><label for="Caller">Caller<sup>*</sup></label>
+            </div>
+            <div class="form-group col-md-4 col-lg-2 col-sm-6 col-xs-12">
+                <input class="inputhover form-control" id="Phone" type="tel" placeholder="(123) 456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required /><label for="Phone">Phone<sup>*</sup></label>
+            </div>
+            <div class="form-group col-md-4 col-lg-2 col-sm-6 col-xs-12">
+                <input class="inputhover form-control" id="Email" type="email" placeholder="Email Id" required /><label for="Email">Email<sup>*</sup></label>
+            </div>
+            <div class="col-md-4 col-lg-2 col-sm-6 col-xs-12">
+              <button type="button" class="custom-btn pull-right">Add Claim Item&nbsp;&nbsp;<i class="fa fa-plus-circle"></i></button>
+            </div>
+        </form>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+        <div class="AddClaim MarginTop20">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading active" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    Add Claim Item
+                </h5>
+              </div>
+              <div class="" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <form class="form-horizontal addclaimform">
+                    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopaddingleft nopaddingright">
+                    <div class="form-group col-md-3 col-lg-2 col-sm-4 col-xs-12 clear">
+                      <label class="control-label">Item#&nbsp;<sup>*</sup>&nbsp;:</label>
+                      <select class="editable-select">
+                        <option>15141</option>
+                        <option>16683</option>
+                        <option>17650</option>
+                        <option>17720</option>
+                        <option>18424</option>
+                        <option>18428</option>
+                        <option>18485</option>
+                        <option>26092</option>
+                        <option>37120</option>
+                      </select>
+                      <i class="fa fa-times" id="Clear"></i>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-2 col-sm-4 col-xs-12 clear">
+                      <label class="control-label">Invoice#&nbsp;<sup>*</sup>&nbsp;:</label>
+                      <select class="editable-select">
+                        <option>712398-1-04/24/2018</option>
+                        <option>712345-1-04/15/2018</option>
+                        <option>712398-1-04/24/2018</option>
+                      </select>
+                      <i class="fa fa-times" id="Clear2"></i>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-2 col-xs-12 col-sm-4">
+                        <label class="control-label">Claim Code&nbsp;<sup>*</sup>&nbsp;:</label>
+                        <div class="sel sel--black-panther">
+                          <select name="select-profession" class="form-control">
+                            <option value="">Allowences</option>
+                            <option value="">Bad Dept.</option>
+                            <option value="">Credit Card Refund</option>
+                            <option value="">Defects</option>
+                            <option value="">Damages</option>
+                            <option value="">Freight Credits</option>
+                            <option value="">Over Ship</option>
+                            <option value="">Price Correction</option>
+                            <option value="">Returns</option>
+                            <option value="">Under Ship</option>
+                            <option value="">Write Off Credit</option>
+                          </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                      <label class="control-label">Description&nbsp;<sup>*</sup>&nbsp;:</label>
+                      <input type="text" class="form-control  height32" value="Ceramic Mason Jar Cookie Jar" readonly/>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-3 col-sm-4 col-xs-12 Returnfunction">
+                      <label class="control-label">Disp Code&nbsp;<sup>*</sup>&nbsp;:</label>
+                      <div class="sel sel--black-panther">
+                        <select name="select-profession" id="Selection" class="form-control">
+                          <option value="">Keep Items</option>
+                          <option value="">Keep Items</option>
+                          <option value="ReturnToUs">Return To Us</option>
+                        </select>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12 nopaddingleft nopaddingright">
+                    <div class="form-group col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                      <label class="control-label">Claim Qty&nbsp;<sup>*</sup>&nbsp;:</label>
+                      <input type="number" class="form-control height32"/>
+                      <p class="help-text"><span>Remaining Qty : 2</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Shipped Qty: 2</span></p>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                      <label class="control-label">Price&nbsp;<sup>*</sup>&nbsp;:</label>
+                      <input type="number" class="form-control height32"/>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                      <label class="control-label">Ext Price$&nbsp;:</label>
+                      <input type="number" class="form-control height32"/>
+                    </div>
+                    <div class="form-group col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                      <label class="control-label">Notes&nbsp;:</label>
+                      <textarea class="form-control" rows="1"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text-center center-block">
+                      <button type="button" class="button save">Save</button>
+                      <button type="button" class="button cancel">Cancel</button>
+                      <button type="button" class="button reset">Reset</button>
+                  </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+          <div class="ItemTable table-responsive overflowvisible">
+            <table class="table table-striped datatable" cellspacing="0" width="100%">
+            <thead>
+            <tr>
+              <th>Image</th>
+              <th>Invoice&nbsp;#</th>
+              <th>Item&nbsp;#</th>
+              <th>Terms</th>
+              <th>Description</th>
+              <th>Claim&nbsp;Code</th>
+              <th>Disp&nbsp;Code</th>
+              <th>Claim&nbsp;Qty</th>
+              <th>Price</th>
+              <th>Ext&nbsp;Price</th>
+              <th>Notes</th>
+              <th>Replace&nbsp;Qty</th>
+              <th>Percentage</th>
+              <th>Actions</th>
+              <th>Images</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                  <div class="magnify">
+                      <a href="#"><img src="images/18420-s.png" class="center-block" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                  </div>
+              </td>
+              <td>714840-1</td>
+              <td>18420</td>
+              <td>90</td>
+              <td>Wood Coffee Wall/Table Clock</td>
+              <td>Defects</td>
+              <td>Keep Items</td>
+              <td>1</td>
+              <td>$7.50</td>
+              <td>-$7.50</td>
+              <td>Test</td>
+              <td>No</td>
+              <td>50</td>
+              <td>
+                  <a href="#" class="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
+                  <a href="#" class="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash deletepopover"></i></a>
+              </td>
+              <td width="140">
+                <div class="claimimages">
+                    <a href="#"><img src="images/18420-s.png" class="center-block" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                </div>
+                <div class="claimimages">
+                    <a href="#"><img src="images/18420-s.png" class="center-block" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                </div>
+                <div class="claimimages">
+                    <a href="#"><img src="images/18420-s.png" class="center-block" alt="" /><span><img src="images/18420-l.jpg" alt=" " /></span></a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="12" class="text-right"><label class="main-color">Overship Claim :</label> <span>$0.00</span></td>
+              <td class="text-right"><label class="main-color">Return Claim :</label> <span>$0.00</span></td>
+              <td class="text-right"><label class="main-color">Total Claim :</label> <span>-$7.50</span></td>
+            </tr>
+          </tfoot>
+        </table>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft nopaddingright">
+        <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" id="ReturnToUs">
+            <div class="panel panel-default clearfix">
+              <div class="panel-heading active" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    Claims Communication
+                </h5>
+              </div>
+              <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 nopaddingleft">
+              <div id="communication" class="" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <form class="form-horizontal">
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                          <div class="form-group form col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <input type="checkbox" id="check" class="check"/>
+                            <label for="check">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Email to Customer</span>
+                          </div>
+                          <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                              <input type="text" class="form-control" id="Input" value="rekhan@youngsinc.com" disabled/>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                          <div class="form-group form col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <input type="checkbox" id="check2" class="check"/>
+                            <label for="check2">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Email to Rep</span>
+                          </div>
+                          <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                              <input type="text" class="form-control" id="Input2" value="soleskie@ivystone.com" disabled/>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                          <div class="form-group form col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <input type="checkbox" id="check3" class="check"/>
+                            <label for="check3">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Email to Other</span>
+                          </div>
+                          <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                              <input type="text" class="form-control" id="Input3" value="Other Email" disabled/>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                          <div class="form-group form col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <input type="checkbox" id="check4" class="check"/>
+                            <label for="check4">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>To Fax</span>
+                          </div>
+                          <div class="col-md-8 col-xs-12 col-sm-6 col-lg-8">
+                              <input type="text" class="form-control" id="Input4" value="Fax Number" disabled/>
+                          </div>
+                        </div>
+                        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                          <div class="form-group form col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <input type="checkbox" id="check5" class="check"/>
+                            <label for="check5">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Billing Address</span>
+                          </div>
+                          <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+                            <div id="BillingAddress">
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">Address 1 :</label>
+                                    <input type="text" class="form-control" value="5073 Ann Arbor Rd"/>
+                                </div>
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">Address 2 :</label>
+                                    <input type="text" class="form-control" value=""/>
+                                </div>
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">City :</label>
+                                    <input type="text" class="form-control" value="Dundee"/>
+                                </div>
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">State :</label>
+                                    <div class="sel sel--black-panther">
+                                      <select name="select-profession" class="form-control">
+                                        <option value="Alaska">Alaska</option>
+                                        <option value="Arizona">Arizona</option>
+                                        <option value="Indiana">Indiana</option>
+                                        <option value="California">California</option>
+                                        <option value="Florida">Florida</option>
+                                        <option value="Michigan">Michigan</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">Country :</label>
+                                    <div class="sel sel--black-panther">
+                                      <select name="select-profession" class="form-control">
+                                        <option value="Canada">Canada</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="Mexico">Mexico</option>
+                                        <option value="Panama">Panama</option>
+                                        <option value="Taiwan">Taiwan</option>
+                                        <option value="USA">USA</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">Zip :</label>
+                                    <input type="text" class="form-control" value="48131"/>
+                                </div>
+                                <div class="form-group col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <label class="control-label main-color">Phone :</label>
+                                    <input type="text" class="form-control" value="(785) 456-1234"/>
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6 col-lg-6 col-xs-12 col-sm-6 nopaddingleft noapddingright MarginTop20">
+                              <label class="control-label main-color">Note to print on the claim</label>
+                              <textarea class="form-control" placeholder="Enter Note here"></textarea>
+                            </div>
+                            <div class="form-group col-md-6 col-lg-6 col-xs-12 col-sm-6 nopaddingleft noapddingright MarginTop20">
+                              <label class="control-label main-color">Permanent Internal Claim Note for the Customer</label>
+                              <textarea class="form-control" placeholder="Enter Note here"></textarea>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                  <div class="panel panel-default clearfix">
+                    <div class="panel-heading active" role="tab" id="headingOne">
+                      <h5 class="panel-title">
+                          Claims Chart
+                      </h5>
+                    </div>
+                    <div class="" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                          <div id="claimsstatus"></div>
+                          <div id="claimspie"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" id="ReturnDetails">
+            <div class="panel panel-default clearfix">
+              <div class="panel-heading active" role="tab" id="headingOne">
+                <h5 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#returndetails" aria-expanded="true" aria-controls="collapseOne">Return Details</a>
+
+                </h5>
+              </div>
+              <div id="returndetails" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body returndetails">
+                  <form class="form-horizontal">
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Contact Name :</label>
+                            <input type="text" class="form-control return" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Address 1 :</label>
+                            <input type="text" class="form-control return" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Address 2 :</label>
+                            <input type="text" class="form-control return" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">City :</label>
+                            <input type="text" class="form-control return" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">State :</label>
+                            <div class="disabled">
+                            <div class="sel sel--black-panther">
+                              <select name="select-profession" class="form-control disabled" id="select-state">
+                                <option value="Alaska">Alaska</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="California">California</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Michigan">Michigan</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Zip :</label>
+                            <input type="text" class="form-control return" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                            <div class="form-group">
+                                <label class="control-label">Country :</label>
+                                <div class="disabled">
+                                <div class="sel sel--black-panther">
+                                  <select name="select-profession" class="form-control" id="select-country">
+                                    <option value="Canada">Canada</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="USA">USA</option>
+                                  </select>
+                                </div>
+                              </div>
+                              </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Phone :</label>
+                            <input type="text" class="form-control return" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Ext :</label>
+                            <input type="text" class="form-control return" disabled/><a href="#" id="Ext"><i class="fa fa-map-marker"></i></a><span class="focus-border"></span></div>
+                        </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Cases :</label>
+                            <input type="text" class="form-control return" value="0" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Restock Fee :</label>
+                            <input type="text" class="form-control return" value="0" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group">
+                            <label class="control-label">Email :</label>
+                            <input type="text" class="form-control return" value="rekhan@youngsinc.com" disabled/>
+                        </div>
+                      </div>
+                      <div class="col-md-5 col-lg-4 col-sm-8 col-xs-12">
+                        <div class="form-group">
+                          <div class="form MarginTop20">
+                            <input type="checkbox" id="check6" class="check"/>
+                            <label for="check6">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Issue Call</span>
+                          </div>
+                          <div class="form MarginTop20">
+                            <input type="checkbox" id="check7" class="check"/>
+                            <label for="check7">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>LTL Pickups</span>
+                          </div>
+                          <div class="form MarginTop20">
+                            <input type="checkbox" id="check8" class="check"/>
+                            <label for="check8">
+                              <svg viewBox="0,0,50,50">
+                                <path d="M5 30 L 20 45 L 45 5"></path>
+                              </svg>
+                            </label>
+                            <span>Resident Address</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-lg-2 col-sm-4 col-xs-12">
+                        <div class="form-group fedEx">
+                            <label class="control-label main-color">FedEx Web Link :</label>
+                              <a href="#"><img src="images/fedex_logo.png" class="img-responsive"/></a>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lg-12 col-sm=12 col-xs-12">
+            <div class="col-md-5 col-lg-5 col-sm-6 col-xs-12 nopaddingleft nopaddingright">
+              <div class="customer-credit">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                  <div class="panel panel-default">
+                    <div class="panel-heading active" role="tab" id="headingOne">
+                      <h5 class="panel-title">
+                          Customer Credit Details
+                      </h5>
+                    </div>
+                    <div class="" role="tabpanel" aria-labelledby="headingOne">
+                      <div class="panel-body">
+                        <div class="credit-details col-md-12">
+                          <div class="radio-btn">
+                            <input type="radio" id="account" name="selector">
+                            <label for="account">To Young's Account (Bulk 1)</label>
+                            <div class="check"></div>
+                          </div>
+                          <div class="radio-btn ">
+                            <input type="radio" id="creditcard" value="red" name="selector">
+                            <label for="creditcard">To Credit Card</label>
+                            <div class="check2"></div>
+                          </div>
+                          <div class="form-group red" id="creditcards" style="float:left;">
+                              <label class="control-label MarginTop20">Select Credit Card&nbsp;<sup>*</sup></label>
+                              <div class="sel sel--black-panther">
+                                <select name="select-profession" class="form-control">
+                                  <option value="">42651-XXXXXXXXX-6431</option>
+                                  <option value="">23874-XXXXXXXXX-8664</option>
+                                  <option value="">38872-XXXXXXXXX-2274</option>
+                                  <option value="">87423-XXXXXXXXX-8927</option>
+                                </select>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7 col-lg-7 col-sm-6 col-xs-12 nopaddingright">
+                <div class="panel panel-default clearfix accountabilitytable">
+                  <div class="panel-heading active" role="tab" id="headingOne">
+                    <h5 class="panel-title">
+                        Accountability
+                        <i class="fa fa-filter pull-right" id="AddAccountability"></i>
+                        <i class="fa fa-plus pull-right"></i>
+                    </h5>
+                  </div>
+                  <div class="border-none" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body">
+                      <div class="col-md-12 clearfix">
+                          <table class="table" cellspacing="0" width="100%">
+                              <tbody>
+                                  <tr>
+                                      <td>
+                                        <div class="form-group">
+                                            <label class="control-label main-color">Dept&nbsp;<sup>*</sup></label>
+                                            <div class="sel sel--black-panther">
+                                              <select name="select-profession" class="form-control">
+                                                <option value="">Accounting</option>
+                                                <option value="">Carrier</option>
+                                                <option value="">Computer</option>
+                                                <option value="">CSR</option>
+                                                <option value="">Purchasing</option>
+                                                <option value="">SalesRep</option>
+                                                <option value="">Vendors</option>
+                                                <option value="">Warehouse</option>
+                                                <option value="">Others</option>
+                                              </select>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="form-group">
+                                            <label class="control-label main-color">User&nbsp;<sup>*</sup></label>
+                                            <div class="sel sel--black-panther" style="width:100px;">
+                                              <select name="select-profession" class="form-control">
+
+                                              </select>
+                                            </div>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="form-group">
+                                            <label class="control-label main-color">Total %&nbsp;<sup>*</sup></label>
+                                            <input type="text" class="form-control"/>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="form-group">
+                                            <label class="control-label main-color">Total $&nbsp;<sup>*</sup></label>
+                                            <input type="number" class="form-control"/>
+                                        </div>
+                                      </td>
+                                      <td>
+                                        <div class="form-group">
+                                            <label class="control-label main-color">Notes&nbsp;<sup>*</sup></label>
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                      </td>
+                                  </tr>
+                              </tbody>
+                          </table>
+                      </div>
+                      <div class="col-md-12 col-lh-12 col-sm-12 col-xs-12 text-center center-block">
+                          <button type="button" class="button save">Save</button>
+                          <button type="button" class="button cancel">Cancel</button>
+                      </div>
+                      <div class="ItemTable table-responsive Accountability">
+                        <table class="table table-striped datatable" cellspacing="0" width="100%">
+                        <thead>
+                        <tr>
+                          <th>Dept</th>
+                          <th>User</th>
+                          <th>Total&nbsp;%</th>
+                          <th>Total&nbsp;$</th>
+                          <th>Notes</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Vendor</td>
+                          <td>Sino gifts Design & Manufacturing</td>
+                          <td>-100.00</td>
+                          <td>-$60.0</td>
+                          <td></td>
+                          <td>
+                              <a href="#" class="" data-toggle="tooltip" data-placement="top" data-original-title="Edit"><i class="fa fa-pencil-square-o editpopover"></i></a>
+                              <a href="#" class="" data-toggle="tooltip" data-placement="top" data-original-title="Delete"><i class="fa fa-trash deletepopover"></i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                      <tfoot>
+                        <tr>
+                          <td colspan="5" class="text-center"><label class="main-color"><strong>Total$ :</strong></label> <span>-$60.00</span></td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-md-12 col-lh-12 col-sm-12 col-xs-12 text-center center-block">
+              <button type="button" class="button save">Save</button>
+          </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/jquery-editable-select.min.js"></script>
+    <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+    <script src="js/dataTables.bootstrap.js" type="text/javascript"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="js/chart.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+
+  </body>
+</html>
